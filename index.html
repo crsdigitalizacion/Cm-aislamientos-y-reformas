@@ -1,0 +1,1384 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>CM Aislamientos y Reformas</title>
+<meta name="description" content="CM Reformas: reformas completas de viviendas y locales, pladur a medida y aislamiento térmico en Logroño y La Rioja. Presupuesto gratis y ayuda con la subvención. Tel. 614 184 114.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"CM Reformas","legalName":"CM Reformas SL","description":"Reformas completas, pladur a medida, techos insonorizados y aislamiento térmico en Logroño y La Rioja.","telephone":["+34614184114","+34642407195"],"address":{"@type":"PostalAddress","addressLocality":"Logroño","addressRegion":"La Rioja","addressCountry":"ES"},"areaServed":[{"@type":"City","name":"Logroño"},{"@type":"City","name":"Alfaro"},{"@type":"AdministrativeArea","name":"La Rioja"}],"sameAs":["https://www.instagram.com/cmaislamientos/"],"knowsAbout":["Reformas integrales","Pladur a medida","Aislamiento térmico","Techos insonorizados","Humedades"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: blanco limpio, rejilla de 12 col; una sola escena 3D (despiece de un trasdosado) que se monta con el scroll; el resto, calma y fotografía. */
+:root{
+  --bg:#ffffff;
+  --paper:#f5f7fa;        /* gris con sesgo azul, para bandas */
+  --ink:#101b30;          /* casi negro azulado */
+  --navy:#1d3a70;         /* azul del logo */
+  --red:#c8252f;          /* rojo del tejado */
+  --muted:#5a6478;
+  --line:#e2e6ee;
+  --wool:#c9b46a;
+  --display:"Bodoni Moda","Bodoni 72",Didot,"Times New Roman",serif;
+  --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"Figtree",system-ui,sans-serif;
+  --gut:max(16px, env(safe-area-inset-left, 0px));
+  --gutr:max(16px, env(safe-area-inset-right, 0px));
+  --max:1240px;
+  --ease:cubic-bezier(.2,.7,.1,1);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{overflow-x:hidden;overflow-x:clip}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;overflow-x:clip}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:rgba(255,255,255,.92)}
+a{color:inherit}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:var(--display);font-variation-settings:"opsz" 24;line-height:1.04;letter-spacing:-.015em;margin:0;text-wrap:balance;color:var(--ink)}
+h1{font-size:clamp(40px,6.4vw,86px);font-weight:600}
+h2{font-size:clamp(32px,4.2vw,56px);font-weight:600}
+h3{font-size:clamp(21px,1.8vw,26px);font-weight:700}
+p{margin:0;max-width:62ch}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:var(--gut);padding-right:var(--gutr)}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);display:inline-flex;gap:10px;align-items:center}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--red)}
+.lead{font-size:clamp(17px,1.4vw,20px);color:var(--muted)}
+.mono{font-family:var(--mono);font-size:13px;letter-spacing:.03em;color:var(--muted)}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:4px}
+
+/* ---------- botones ---------- */
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 15px/1 var(--body);padding:15px 22px;border-radius:999px;text-decoration:none;border:1.5px solid var(--navy);transition:background .3s var(--ease),color .3s var(--ease),transform .3s var(--ease);cursor:pointer;white-space:nowrap}
+.btn-solid{background:var(--navy);color:#fff}
+.btn-solid:hover{background:var(--red);border-color:var(--red)}
+.btn-ghost{background:transparent;color:var(--navy)}
+.btn-ghost:hover{background:var(--navy);color:#fff}
+.btn svg{width:16px;height:16px;transition:transform .3s var(--ease)}
+.btn:hover svg{transform:translateX(3px)}
+
+/* ---------- cabecera ---------- */
+.hdr{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(255,255,255,.86);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:12px}
+.brand{display:flex;align-items:center;text-decoration:none}
+.brand{gap:12px}
+.brand svg.mono{height:44px;width:auto;flex:none}
+.wm{display:flex;flex-direction:column;gap:3px;padding-left:12px;border-left:1px solid var(--line)}
+.wm b{font:600 19px/1 var(--body);color:#13295a;letter-spacing:.01em}
+.wm small{font:500 9.5px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:420px){.wm small{display:none}}
+.nav{display:flex;gap:4px;align-items:center}
+.nav a{font:500 15px/1 var(--body);text-decoration:none;padding:10px 14px;border-radius:999px;color:var(--ink);position:relative}
+.nav a::after{content:"";position:absolute;left:14px;right:14px;bottom:5px;height:2px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+.nav a:hover::after,.nav a[aria-current="page"]::after{transform:scaleX(1)}
+.nav .btn{margin-left:10px;padding:12px 18px;color:#fff}
+.nav .btn::after{display:none}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;position:relative}
+.burger span{position:absolute;left:11px;right:11px;height:2px;background:var(--ink);transition:transform .3s var(--ease),opacity .3s}
+.burger span:nth-child(1){top:16px}.burger span:nth-child(2){top:22px}.burger span:nth-child(3){top:28px}
+.menu-open .burger span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.menu-open .burger span:nth-child(2){opacity:0}
+.menu-open .burger span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+@media (max-width:900px){
+  .burger{display:block}
+  .menu-open .hdr{backdrop-filter:none;-webkit-backdrop-filter:none;background:var(--bg);border-color:var(--line)}
+  .nav{position:fixed;left:0;right:0;top:calc(70px + env(safe-area-inset-top,0px));height:calc(100svh - 70px - env(safe-area-inset-top,0px));overflow-y:auto;overscroll-behavior:contain;background:var(--bg);z-index:55;flex-direction:column;align-items:stretch;padding:24px var(--gutr) 40px var(--gut);gap:0;transform:translateY(-8px);opacity:0;pointer-events:none;transition:opacity .3s,transform .4s var(--ease)}
+  .menu-open .nav{opacity:1;transform:none;pointer-events:auto}
+  .nav a{font:600 32px/1 var(--display);font-variation-settings:"opsz" 24;font-stretch:normal;padding:18px 0;border-bottom:1px solid var(--line);border-radius:0}
+  .nav a::after{display:none}
+  .nav .btn{margin:28px 0 0;justify-content:center;font:600 16px/1 var(--body);padding:18px;border-radius:999px;border-bottom:1.5px solid var(--navy)}
+}
+
+/* ---------- páginas ---------- */
+.page{display:none}
+.page.active{display:block;animation:pageIn .7s var(--ease) both}
+@keyframes pageIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.curtain{position:fixed;inset:0;z-index:70;pointer-events:none;background:var(--navy);transform:scaleY(0);transform-origin:bottom}
+.curtain.go{animation:curtain .9s var(--ease)}
+@keyframes curtain{0%{transform:scaleY(0);transform-origin:bottom}45%{transform:scaleY(1);transform-origin:bottom}55%{transform:scaleY(1);transform-origin:top}100%{transform:scaleY(0);transform-origin:top}}
+
+/* revelados al hacer scroll: visibles por defecto; solo se animan si JS los arma */
+.rv.armed{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.armed.in{opacity:1;transform:none}
+.rv.armed.from-r{transform:translateX(70px)}
+.rv.armed.from-l{transform:translateX(-70px)}
+.rv.armed.from-r,.rv.armed.from-l{transition-duration:1.1s}
+.rv.armed.from-r.in,.rv.armed.from-l.in{transform:none}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
+
+section{position:relative}
+.sec{padding-block:clamp(72px,10vw,140px)}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:28px 60px;align-items:end;margin-bottom:clamp(36px,5vw,64px)}
+.sec-head > *{min-width:0}
+@media (max-width:800px){.sec-head{grid-template-columns:1fr}}
+
+/* ---------- HISTORIA 3D (inicio) ---------- */
+.story{height:330vh}
+.stage{position:sticky;top:calc(70px + env(safe-area-inset-top,0px));height:calc(100svh - 70px - env(safe-area-inset-top,0px));display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:center;max-width:var(--max);margin:0 auto;padding-left:var(--gut);padding-right:var(--gutr);gap:20px}
+.stage-copy{display:flex;flex-direction:column;gap:18px;min-width:0;position:relative;z-index:2}
+.stage-copy h1{font-size:clamp(40px,4.4vw,66px);line-height:1.12}
+.stage-copy h1 em{font-style:italic;color:var(--navy);position:relative;white-space:nowrap}
+.stage-copy h1 em::after{content:"";position:absolute;left:.04em;right:0;bottom:.1em;height:max(2px,.045em);border-radius:2px;background:var(--red);transform-origin:left;animation:underline 1.2s .5s var(--ease) both}
+@keyframes underline{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.canvas-box{position:relative;height:100%;min-height:0;min-width:0;grid-column:2;grid-row:1 / -1;align-self:stretch}
+.stage{grid-template-rows:minmax(0,1fr) auto auto minmax(0,1fr)}
+.stage > .stage-copy{grid-column:1;grid-row:2}
+.layers-wrap > .stage-copy{grid-column:1;grid-row:3;margin-top:22px}
+#wall{position:absolute;inset:0;width:100%;height:100%;display:block}
+.wall-fallback{position:absolute;inset:8% 0;background:url(img/salon.webp) center/cover;border-radius:6px}
+.layers{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:0;border-top:1px solid var(--line)}
+.layers li{display:grid;grid-template-columns:34px 1fr auto;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--line);color:var(--muted);transition:color .4s}
+.layers li b{font:700 16px/1.2 var(--display);font-variation-settings:"opsz" 14;font-stretch:normal;color:inherit}
+.layers li .n{font-family:var(--mono);font-size:12px}
+.layers li .spec{font-family:var(--mono);font-size:12px;text-align:right}
+.layers li.on{color:var(--ink)}
+.layers li.on .n{color:var(--red)}
+.layers li.now b{color:var(--navy)}
+.progress{height:2px;background:var(--line);position:relative;overflow:hidden;border-radius:2px}
+.progress i{position:absolute;inset:0;background:var(--red);transform-origin:left;transform:scaleX(0)}
+.scroll-hint{display:flex;align-items:center;gap:10px}
+.scroll-hint .mouse{width:18px;height:28px;border:1.5px solid var(--muted);border-radius:10px;position:relative}
+.scroll-hint .mouse::after{content:"";position:absolute;left:50%;top:6px;width:2px;height:6px;margin-left:-1px;background:var(--red);border-radius:2px;animation:wheel 1.6s infinite}
+@keyframes wheel{0%{opacity:0;transform:translateY(-3px)}40%{opacity:1}100%{opacity:0;transform:translateY(7px)}}
+
+@media (max-width:900px){
+  .story{height:300vh}
+  .stage{grid-template-columns:1fr;grid-template-rows:auto auto auto;align-content:center;align-items:start;padding-block:10px;gap:10px}
+  .stage-copy{gap:14px}
+  .stage-copy .lead,.stage-copy .scroll-hint{display:none}
+  .stage-copy h1{font-size:clamp(34px,9.6vw,52px)}
+  .ctas .btn{padding:13px 18px;font-size:14px}
+  .stage > .stage-copy{grid-row:1}
+  .canvas-box{grid-column:1;grid-row:2;height:auto;aspect-ratio:1/.96;width:100%}
+  .layers-wrap{grid-row:3;display:block}
+  .layers-wrap > .stage-copy{margin-top:0}
+  .layers li{padding:7px 0;grid-template-columns:28px 1fr auto}
+  .layers li:not(.now){display:none}
+  .layers li.now{display:grid}
+}
+@media (min-width:901px){.layers-wrap{display:contents}}
+
+/* ---------- servicios (inicio) ---------- */
+.svc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.svc{display:flex;flex-direction:column;gap:16px;text-decoration:none;color:inherit}
+.svc .ph{aspect-ratio:4/3.4;overflow:hidden;border-radius:4px;background:var(--paper);max-width:100%}
+.svc .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease)}
+.svc:hover .ph img{transform:scale(1.05)}
+.svc .t{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.svc .arrow{width:36px;height:36px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;flex:none;transition:all .35s var(--ease)}
+.svc:hover .arrow{background:var(--red);border-color:var(--red);color:#fff;transform:rotate(-45deg)}
+.svc p{color:var(--muted);font-size:15.5px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
+.chip{font:500 14px/1 var(--body);padding:11px 16px;border:1px solid var(--line);border-radius:999px;color:var(--ink);background:var(--bg);display:inline-flex;gap:8px;align-items:center}
+.chip i{width:6px;height:6px;border-radius:50%;background:var(--red)}
+@media (max-width:860px){.svc-grid{grid-template-columns:1fr}}
+
+/* ---------- antes y después ---------- */
+.ba{position:relative;margin:0;aspect-ratio:4/3;max-width:100%;overflow:hidden;border-radius:4px;background:var(--paper);user-select:none;-webkit-user-select:none;touch-action:pan-y}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba-before{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--pos)) 0 0)}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;margin:0;cursor:ew-resize;z-index:3}
+.ba-handle{position:absolute;top:0;bottom:0;left:var(--pos);width:2px;margin-left:-1px;background:#fff;z-index:2;pointer-events:none;box-shadow:0 0 12px rgba(0,0,0,.25)}
+.ba-handle::after{content:"‹ ›";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;background:#fff;color:var(--navy);display:grid;place-items:center;font:600 16px/1 var(--body);letter-spacing:2px;box-shadow:0 6px 18px rgba(16,27,48,.3)}
+.ba input:focus-visible ~ .ba-handle::after{outline:2px solid var(--red);outline-offset:2px}
+.ba-tag{position:absolute;top:14px;z-index:2;font:600 12px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;padding:8px 11px;border-radius:999px;background:rgba(16,27,48,.72);color:#fff;pointer-events:none}
+.ba-tag.l{left:14px}.ba-tag.r{right:14px}
+.ba figcaption{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:40px 18px 14px;background:linear-gradient(transparent,rgba(10,18,34,.6));color:#fff;font-size:14px;pointer-events:none}
+.ba-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:22px}
+
+/* ---------- obras recientes ---------- */
+.recent{overflow-x:clip;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);grid-template-rows:repeat(2,minmax(0,1fr));gap:18px;height:clamp(420px,46vw,620px)}
+.rc{position:relative;overflow:hidden;border-radius:4px;display:block;color:#fff;text-decoration:none;background:var(--paper);min-height:0}
+.rc.big{grid-row:1 / span 2}
+.rc[data-slide]{will-change:transform,opacity}
+.rc img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.rc:hover img{transform:scale(1.05)}
+.rc span{position:absolute;left:0;right:0;bottom:0;padding:50px 20px 18px;background:linear-gradient(transparent,rgba(10,18,34,.72));display:flex;flex-direction:column;gap:4px}
+.rc em{font-style:normal;color:#d6deec}
+.rc b{font:700 21px/1.15 var(--display);font-variation-settings:"opsz" 14;font-stretch:normal}
+@media (max-width:760px){.recent{grid-template-columns:1fr;grid-template-rows:none;height:auto}.rc{aspect-ratio:4/3}.rc.big{grid-row:auto}}
+
+/* ---------- banda subvenciones ---------- */
+.band{background:var(--paper)}
+.sub-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(30px,6vw,90px);align-items:start}
+.sub-grid > div{display:flex;flex-direction:column;gap:22px;min-width:0}
+.big40{font:600 clamp(90px,13vw,190px)/.85 var(--display);font-variation-settings:"opsz" 30;color:var(--navy);letter-spacing:-.03em}
+.big40 small{font-size:.32em;font-stretch:100%;color:var(--red);vertical-align:top;margin-left:4px}
+.tbl{width:100%;border-collapse:collapse;font-size:15px}
+.tbl th{font:500 11.5px/1.2 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:left;padding:0 0 12px;border-bottom:1.5px solid var(--ink)}
+.tbl td{padding:18px 12px 18px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl td:first-child b{font:700 17px/1.2 var(--display);font-variation-settings:"opsz" 14;font-stretch:normal;display:block}
+.tbl td:first-child span{color:var(--muted);font-size:14px}
+.bar{display:flex;align-items:center;gap:12px;min-width:150px}
+.bar .tr{flex:1;height:8px;background:#fff;border-radius:6px;position:relative;overflow:hidden;border:1px solid var(--line)}
+.bar .tr i{position:absolute;inset:0;width:var(--w);background:var(--navy);border-radius:6px;transform-origin:left;transition:transform 1.4s var(--ease)}
+.armed-bars .bar .tr i{transform:scaleX(0)}
+.armed-bars.in .bar .tr i{transform:scaleX(1)}
+.bar b{font:700 18px/1 var(--display);font-variation-settings:"opsz" 14;font-variant-numeric:tabular-nums;min-width:52px;text-align:right}
+.tbl-scroll{overflow-x:auto}
+@media (max-width:860px){.sub-grid{grid-template-columns:1fr}}
+.foot{font-size:13px;color:var(--muted)}
+
+/* ---------- pladur strip ---------- */
+.strip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(260px,31%);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:16px;scrollbar-width:thin}
+.piece{scroll-snap-align:start;display:flex;flex-direction:column;gap:12px;perspective:900px}
+.piece .ph{aspect-ratio:4/3;border-radius:4px;overflow:hidden;transform-style:preserve-3d;transition:transform .5s var(--ease),box-shadow .5s var(--ease);max-width:100%}
+.piece .ph img{width:100%;height:100%;object-fit:cover}
+.piece .lbl{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.piece .lbl b{font:700 19px/1.2 var(--display);font-variation-settings:"opsz" 14;font-stretch:normal}
+
+/* ---------- proceso ---------- */
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;counter-reset:s;border-top:1.5px solid var(--ink)}
+.step{padding:24px 20px 6px 0;display:flex;flex-direction:column;gap:10px;position:relative;min-width:0}
+.step .n{font:500 12px/1 var(--mono);color:var(--red)}
+.step b{font:700 20px/1.15 var(--display);font-variation-settings:"opsz" 14;font-stretch:normal}
+.step p{color:var(--muted);font-size:15px}
+.step::before{content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;border-radius:50%;background:var(--red)}
+@media (max-width:900px){.steps{grid-template-columns:1fr;border-top:0;border-left:1.5px solid var(--ink);margin-left:4px}.step{padding:0 0 30px 26px}.step::before{top:2px;left:-5px}}
+
+/* ---------- CTA final ---------- */
+.cta{background:var(--navy);color:#fff;overflow:hidden}
+.cta .wrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:40px;align-items:end;padding-block:clamp(70px,9vw,120px)}
+.cta h2{color:#fff}
+.cta .eyebrow{color:#ff8d93}.cta .eyebrow::before{background:#ff8d93}
+.cta p{color:#c9d3e8}
+.phones{display:flex;flex-direction:column;gap:12px}
+.phone{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 18px;border:1px solid rgba(255,255,255,.22);border-radius:10px;color:#fff;background:rgba(255,255,255,.04)}
+.phone .num{font:700 clamp(22px,2.4vw,30px)/1 var(--display);font-variation-settings:"opsz" 14;font-stretch:normal;font-variant-numeric:tabular-nums;user-select:all}
+.copy{font:500 13px/1 var(--body);background:#fff;color:var(--navy);border:0;padding:10px 14px;border-radius:999px;cursor:pointer}
+.copy.ok{background:#ff8d93;color:#3b0a0d}
+.acts{display:flex;gap:8px;flex:none}
+.call{font:600 13px/1 var(--body);background:var(--red);color:#fff;padding:10px 14px;border-radius:999px;text-decoration:none;display:inline-flex;align-items:center}
+.call:hover{background:#a81d26}
+.cta .roof{position:absolute;right:-40px;top:-40px;width:460px;opacity:.09;pointer-events:none;filter:brightness(0) invert(1)}
+@media (max-width:860px){.cta .wrap{grid-template-columns:1fr}}
+
+/* ---------- footer ---------- */
+.ftr{border-top:1px solid var(--line)}
+.ftr .wrap{display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between;padding-block:34px 96px}
+.ftr nav{display:flex;flex-wrap:wrap;gap:6px 22px}
+.ftr a{text-decoration:none;color:var(--muted);font-size:15px}
+.ftr a:hover{color:var(--red)}
+.ftr .flogo svg{height:74px;width:auto}
+.ftr-seo{flex-basis:100%;order:3;max-width:60ch;margin:0;font-size:12.5px;line-height:1.5}
+
+/* ---------- cabeceras de página interior ---------- */
+.phead{padding-block:clamp(56px,8vw,110px) clamp(40px,5vw,70px)}
+.phead .wrap{display:flex;flex-direction:column;gap:22px}
+.phead h1{font-size:clamp(44px,7.4vw,104px);max-width:14ch}
+.phead h1 .r{color:var(--red);font-style:italic}
+
+/* ---------- servicios (página) ---------- */
+.srv{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,6vw,90px);align-items:center;padding-block:clamp(44px,6vw,80px);border-top:1px solid var(--line)}
+.srv:nth-of-type(even) .srv-img{order:2}
+.srv-img{aspect-ratio:5/4;overflow:hidden;border-radius:4px;background:var(--paper);max-width:100%}
+.srv-img img{width:100%;height:118%;object-fit:cover;will-change:transform}
+.srv-txt{display:flex;flex-direction:column;gap:18px;min-width:0}
+.srv-txt .tag{font:500 12px/1 var(--mono);color:var(--red);letter-spacing:.1em}
+.ticks{list-style:none;padding:0;margin:4px 0 0;display:grid;gap:10px}
+.ticks li{display:flex;gap:12px;align-items:flex-start;font-size:16px}
+.ticks li::before{content:"";flex:none;width:16px;height:16px;margin-top:4px;border-radius:50%;background:radial-gradient(circle,var(--red) 0 3px,transparent 4px),var(--bg);border:1.5px solid var(--red)}
+.srv-plain{background:var(--paper);border-radius:4px;display:grid;place-items:center;aspect-ratio:5/4;max-width:100%;overflow:hidden}
+.srv-plain canvas{width:100%;height:100%;display:block}
+@media (max-width:860px){.srv{grid-template-columns:1fr}.srv:nth-of-type(even) .srv-img{order:0}}
+
+/* ---------- pladur (página) ---------- */
+.pl-hero{position:relative;aspect-ratio:21/9;overflow:hidden;border-radius:4px;max-width:100%;clip-path:inset(0 0 0 0 round 4px);animation:reveal 1.4s .15s var(--ease) both}
+@keyframes reveal{from{clip-path:inset(12% 8% 12% 8% round 4px)}to{clip-path:inset(0 0 0 0 round 4px)}}
+.pl-hero img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+@media (max-width:700px){.pl-hero{aspect-ratio:4/3}}
+.pl-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.tilt{perspective:1000px;display:flex;flex-direction:column;gap:14px}
+.tilt .card{aspect-ratio:4/3;border-radius:4px;overflow:hidden;position:relative;transform-style:preserve-3d;transition:transform .6s var(--ease),box-shadow .6s var(--ease);box-shadow:0 1px 0 var(--line);max-width:100%}
+.tilt .card img{width:100%;height:100%;object-fit:cover;transform:translateZ(0) scale(1.06)}
+.tilt .card .glare{position:absolute;inset:0;background:radial-gradient(circle at var(--gx,50%) var(--gy,50%),rgba(255,255,255,.35),transparent 55%);opacity:0;transition:opacity .4s}
+.tilt:hover .card .glare{opacity:1}
+.tilt .meta{display:flex;justify-content:space-between;gap:14px;align-items:baseline}
+.tilt .meta b{font:700 22px/1.15 var(--display);font-variation-settings:"opsz" 14;font-stretch:normal}
+.tilt .meta p{color:var(--muted);font-size:15px}
+@media (max-width:760px){.pl-grid{grid-template-columns:1fr}}
+.feat{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1.5px solid var(--ink)}
+.feat div{padding:22px 18px 0 0;display:flex;flex-direction:column;gap:8px;min-width:0}
+.feat b{font:700 18px/1.2 var(--display);font-variation-settings:"opsz" 14;font-stretch:normal}
+.feat span{color:var(--muted);font-size:15px}
+@media (max-width:860px){.feat{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:22px}}
+
+/* ---------- trabajos ---------- */
+.job{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,5vw,70px);align-items:start;padding-block:clamp(40px,5vw,70px);border-top:1px solid var(--line)}
+.job-imgs{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:14px}
+.job-imgs figure{margin:0;overflow:hidden;border-radius:4px;aspect-ratio:3/4;background:var(--paper);max-width:100%}
+.job-imgs figure:nth-child(2){margin-top:60px}
+.job-imgs img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.job-imgs figure:hover img{transform:scale(1.04)}
+.job-txt{display:flex;flex-direction:column;gap:18px;position:sticky;top:110px;min-width:0}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:10px 22px;margin:6px 0 0;font-size:15px}
+.facts dt{font:500 12px/1.6 var(--mono);color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.facts dd{margin:0}
+.job-noimg{aspect-ratio:16/9;border-radius:4px;background:var(--paper);display:flex;align-items:flex-end;padding:24px;max-width:100%;position:relative;overflow:hidden}
+.job-noimg .drop{position:absolute;inset:0;opacity:.9}
+@media (max-width:860px){.job{grid-template-columns:1fr}.job-txt{position:static}}
+.note{border:1px dashed #c7cfdc;border-radius:8px;padding:22px;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;color:var(--muted)}
+
+/* ---------- contacto ---------- */
+.ct-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(30px,6vw,90px);align-items:start}
+.ct-info{display:flex;flex-direction:column;gap:18px;min-width:0}
+.ct-card{border:1px solid var(--line);border-radius:10px;padding:20px 22px;display:flex;flex-direction:column;gap:8px}
+.ct-card .row{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.ct-card .num{font:700 clamp(26px,3vw,36px)/1 var(--display);font-variation-settings:"opsz" 14;font-stretch:normal;color:var(--navy);font-variant-numeric:tabular-nums;user-select:all}
+.ct-card .copy{background:var(--paper);color:var(--navy);border:1px solid var(--line)}
+.ct-card .copy.ok{background:var(--navy);color:#fff}
+.wa{display:flex;align-items:center;gap:12px;padding:18px 22px;border-radius:10px;background:#e9f7ee;color:#0d5a2c;text-decoration:none;font-weight:600}
+.wa svg{width:26px;height:26px;flex:none}
+form{display:grid;grid-template-columns:1fr 1fr;gap:18px;background:var(--paper);padding:clamp(22px,3vw,36px);border-radius:10px;min-width:0}
+form .full{grid-column:1/-1}
+form select{appearance:none;-webkit-appearance:none;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 6l4 4 4-4' fill='none' stroke='%235a6478' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right 12px center/16px;padding-right:38px}
+.upl{display:flex;flex-direction:column;gap:10px}
+.upl-lbl{text-transform:uppercase;letter-spacing:.06em;font-size:13px}
+.drop{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;padding:22px 16px;border:1.5px dashed #c3cbd8;border-radius:10px;background:#fff;color:var(--navy);cursor:pointer;text-transform:none;letter-spacing:0;font:400 15px/1.4 var(--body);transition:border-color .2s,background .2s}
+.drop:hover,.drop.over{border-color:var(--navy);background:#f8faff}
+.drop input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.drop span{color:var(--ink)}.drop b{color:var(--navy)}
+.drop small{color:var(--muted);font-size:13px}
+.drop:has(input:focus-visible){outline:2px solid var(--red);outline-offset:2px}
+.thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(84px,1fr));gap:8px}
+.thumbs:empty{display:none}
+.thumb{position:relative;aspect-ratio:1;border-radius:8px;overflow:hidden;background:var(--paper)}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.thumb button{position:absolute;top:4px;right:4px;width:24px;height:24px;border-radius:50%;border:0;background:rgba(16,27,48,.75);color:#fff;font-size:15px;line-height:1;cursor:pointer}
+label{display:flex;flex-direction:column;gap:8px;font:500 13px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);min-width:0}
+input,select,textarea{font:400 16px/1.4 var(--body);color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 14px;width:100%;transition:border-color .2s,box-shadow .2s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(29,58,112,.12)}
+textarea{min-height:130px;resize:vertical}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts input{position:absolute;opacity:0;width:1px;height:1px}
+.opts span{font:500 14px/1 var(--body);letter-spacing:0;text-transform:none;color:var(--ink);padding:11px 15px;border:1px solid var(--line);border-radius:999px;background:#fff;cursor:pointer;transition:all .25s}
+.opts input:checked + span{background:var(--navy);border-color:var(--navy);color:#fff}
+.opts input:focus-visible + span{outline:2px solid var(--red);outline-offset:2px}
+.form-ok{grid-column:1/-1;background:#fff;border:1px solid var(--line);border-left:3px solid var(--red);padding:14px 16px;border-radius:6px;font-size:15px}
+@media (max-width:860px){.ct-grid{grid-template-columns:1fr}form{grid-template-columns:1fr}}
+
+/* barra demo */
+.demo{position:fixed;right:calc(14px + env(safe-area-inset-right,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:40;font:500 12px/1 var(--mono);background:var(--ink);color:#fff;padding:9px 14px;border-radius:999px;letter-spacing:.04em;white-space:nowrap;opacity:.9}
+
+
+/* ---------- pladur: hornacinas en profundidad (estilo galería) ---------- */
+.alcoves{height:460vh;background:linear-gradient(var(--bg),var(--paper) 18%,var(--paper) 82%,var(--bg))}
+.alc-stage{position:sticky;top:calc(70px + env(safe-area-inset-top,0px));height:calc(100svh - 70px - env(safe-area-inset-top,0px));overflow:hidden;perspective:1100px;perspective-origin:50% 45%}
+.alc-world{position:absolute;inset:0;transform-style:preserve-3d;will-change:transform}
+.alc{position:absolute;left:50%;top:50%;width:min(1040px,88vw);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(24px,5vw,70px);align-items:center;transform-style:preserve-3d;will-change:transform,opacity}
+.niche{aspect-ratio:4/5;max-height:62svh;width:100%;border-radius:999px 999px 6px 6px;overflow:hidden;position:relative;background:#fff;
+  box-shadow:0 0 0 14px #fff,0 0 0 15px var(--line),0 40px 80px -30px rgba(16,27,48,.35)}
+.niche::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 30px 50px -20px rgba(16,27,48,.35),inset 0 0 0 1px rgba(16,27,48,.06);pointer-events:none}
+.niche img{width:100%;height:100%;object-fit:cover;transform:scale(1.12);transition:transform 1.6s var(--ease)}
+.alc.here .niche img{transform:scale(1)}
+.alc-copy{display:flex;flex-direction:column;gap:16px;min-width:0}
+.alc-copy p{color:var(--muted);font-size:clamp(16px,1.3vw,19px)}
+.alc-copy .spec{font:500 12.5px/1 var(--mono);color:var(--red);letter-spacing:.06em;text-transform:uppercase}
+.alc-nav{position:absolute;left:var(--gut);bottom:28px;list-style:none;margin:0;padding:0;display:flex;gap:18px;font:500 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#9aa3b2;z-index:3}
+.alc-nav li{transition:color .3s}
+.alc-nav li.on{color:var(--navy)}
+.alc-bar{position:absolute;right:var(--gutr);bottom:32px;width:min(220px,30vw);height:2px;background:var(--line);overflow:hidden;z-index:3}
+.alc-bar i{position:absolute;inset:0;background:var(--red);transform-origin:left;transform:scaleX(0)}
+@media (max-width:760px){
+  .alc{grid-template-columns:1fr;gap:20px;width:82vw}
+  .niche{aspect-ratio:4/4.2;max-height:44svh}
+  .alc-copy{gap:10px}.alc-copy h2{font-size:32px}.alc-copy p{font-size:15px}
+  .alc-nav{gap:12px;font-size:10.5px;bottom:20px}.alc-bar{display:none}
+}
+
+/* ---------- trabajos: recorrido horizontal ---------- */
+.hscroll{height:400vh}
+.h-stage{position:sticky;top:calc(70px + env(safe-area-inset-top,0px));height:calc(100svh - 70px - env(safe-area-inset-top,0px));overflow:hidden;display:flex;flex-direction:column;justify-content:center}
+.h-track{display:flex;align-items:center;gap:clamp(24px,4vw,56px);padding-left:max(var(--gut),calc((100vw - var(--max))/2 + 16px));padding-right:12vw;height:78%;will-change:transform;width:max-content}
+.h-intro,.h-text,.h-end{width:min(460px,78vw);display:flex;flex-direction:column;gap:20px;flex:none}
+.h-intro h1{font-size:clamp(46px,6vw,88px)}
+.h-intro h1 .r,.h-end .r{color:var(--red)}
+.h-card{height:100%;aspect-ratio:3/4;margin:0;position:relative;overflow:hidden;border-radius:4px;flex:none;background:var(--paper);max-width:80vw}
+.h-card.tall{aspect-ratio:4/5}
+.h-card img{width:115%;height:100%;object-fit:cover;max-width:none;will-change:transform}
+.h-card figcaption{position:absolute;left:0;right:0;bottom:0;padding:60px 22px 20px;background:linear-gradient(transparent,rgba(10,18,34,.72));color:#fff;display:flex;flex-direction:column;gap:6px}
+.h-card figcaption .mono{color:#d6deec}
+.h-card figcaption b{font:700 22px/1.15 var(--display);font-variation-settings:"opsz" 14;font-stretch:normal}
+.h-humid{aspect-ratio:4/5;display:flex;align-items:flex-end}
+.h-humid canvas{position:absolute;inset:0;width:100%;height:100%}
+.h-humid-txt{position:relative;padding:26px;display:flex;flex-direction:column;gap:10px}
+.h-humid-txt b{font:700 24px/1.15 var(--display);font-variation-settings:"opsz" 14;font-stretch:normal}
+.h-humid-txt p{color:var(--muted);font-size:15px}
+.h-foot{position:absolute;left:0;right:0;bottom:22px;display:flex;align-items:center;justify-content:space-between;gap:20px;max-width:none}
+.h-foot .alc-bar{position:relative;right:auto;bottom:auto;flex:1;max-width:320px}
+@media (max-width:760px){.h-track{height:66%}.h-card{max-height:none}.h-intro .scroll-hint{display:none}}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+html.lenis,html.lenis body{height:auto}
+
+
+/* ---------- fondos con foto ---------- */
+.cta{position:relative;isolation:isolate}
+.cta-bg{position:absolute;inset:0;z-index:-1;background:url(img/techo-perfiles.webp) center/cover;opacity:.16;filter:grayscale(1) contrast(1.1)}
+.cta .wrap{position:relative}
+.h-stage{background:linear-gradient(90deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.9) 45%,rgba(255,255,255,.84) 100%),url(img/techo-local.webp) center/cover}
+
+/* ---------- botones flotantes ---------- */
+.fab{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:45;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+.fab-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:56px;min-width:56px;border-radius:999px;border:0;cursor:pointer;box-shadow:0 12px 30px -10px rgba(16,27,48,.45);transition:transform .3s var(--ease),background .3s;text-decoration:none}
+.fab-btn:hover{transform:translateY(-2px)}
+.fab-btn svg{width:26px;height:26px;flex:none}
+.fab-wa{background:#25d366;color:#fff}
+.fab-q{background:var(--navy);color:#fff;padding:0 20px 0 16px;font:600 15px/1 var(--body)}
+.fab-q[aria-expanded="true"]{background:var(--red)}
+.fab-wa::before{content:"";position:absolute;width:56px;height:56px;border-radius:50%;border:2px solid #25d366;animation:ping 2.4s var(--ease) infinite;pointer-events:none}
+@keyframes ping{0%{transform:scale(1);opacity:.7}80%,100%{transform:scale(1.5);opacity:0}}
+.faq{width:min(380px,calc(100vw - 32px));max-height:min(560px,calc(100svh - 190px));background:var(--bg);border:1px solid var(--line);border-radius:16px;box-shadow:0 30px 70px -20px rgba(16,27,48,.35);display:flex;flex-direction:column;overflow:hidden;transform-origin:bottom right;animation:pop .35s var(--ease)}
+@keyframes pop{from{opacity:0;transform:translateY(10px) scale(.96)}to{opacity:1;transform:none}}
+.faq[hidden],.form-ok[hidden]{display:none}
+.faq header{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px;background:var(--navy);color:#fff}
+.faq header div{display:flex;flex-direction:column;gap:2px}
+.faq header b{font:700 17px/1.2 var(--display);font-variation-settings:"opsz" 14;font-stretch:normal}
+.faq header span{font-size:12.5px;color:#c9d3e8}
+.faq-x{background:rgba(255,255,255,.12);color:#fff;border:0;width:34px;height:34px;border-radius:50%;font-size:22px;line-height:1;cursor:pointer}
+.faq-log{padding:16px;display:flex;flex-direction:column;gap:10px;overflow-y:auto;flex:1;min-height:90px;background:var(--paper)}
+.msg{max-width:86%;padding:10px 13px;border-radius:14px;font-size:14.5px;line-height:1.45;animation:pop .3s var(--ease)}
+.msg.them{background:#fff;border:1px solid var(--line);border-bottom-left-radius:4px;align-self:flex-start}
+.msg.me{background:var(--navy);color:#fff;border-bottom-right-radius:4px;align-self:flex-end}
+.msg a{color:var(--navy);font-weight:600}
+.faq-qs{padding:12px;display:flex;flex-wrap:wrap;gap:8px;border-top:1px solid var(--line);max-height:42%;overflow-y:auto}
+.faq-qs button{font:500 13.5px/1.2 var(--body);padding:9px 12px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;text-align:left;transition:all .2s}
+.faq-qs button:hover{border-color:var(--navy);color:var(--navy)}
+.demo{right:auto;left:calc(14px + env(safe-area-inset-left,0px))}
+@media (max-width:900px){
+  .fab-lbl{display:none}.fab-q{padding:0}
+  .layers-wrap{padding-right:74px}
+}
+
+
+/* ---------- presupuesto siempre visible + botones flotantes discretos ---------- */
+:root{--bar:0px}
+.nav .btn.btn-quote{background:var(--red);border-color:var(--red)}
+.nav .btn.btn-quote:hover{background:#a81d26;border-color:#a81d26}
+.fab-btn{height:46px;min-width:46px;background:var(--bg);color:var(--navy);border:1px solid var(--line);box-shadow:0 8px 22px -14px rgba(16,27,48,.45)}
+.fab-btn svg{width:21px;height:21px}
+.fab-wa{background:var(--bg);color:#1fa855}
+.fab-wa::before{display:none}
+.fab-q{padding:0 16px 0 13px;font:500 14px/1 var(--body);color:var(--navy);background:var(--bg)}
+.fab-q[aria-expanded="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.fab-cta{display:none}
+@media (max-width:900px){
+  :root{--bar:calc(57px + env(safe-area-inset-bottom,0px))}
+  .fab{left:0;right:0;bottom:0;flex-direction:row;align-items:center;gap:10px;padding:7px max(16px,env(safe-area-inset-right,0px)) calc(7px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:rgba(255,255,255,.95);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-top:1px solid var(--line)}
+  .fab-btn{box-shadow:none;height:42px;min-width:42px}
+  .fab-btn svg{width:19px;height:19px}
+  .fab-cta{display:flex;flex:1;min-width:0;align-items:center;justify-content:center;gap:8px;height:42px;padding:0 14px;border-radius:999px;background:var(--red);color:#fff;font:600 14.5px/1 var(--body);text-decoration:none;white-space:nowrap}
+  .fab-cta:active{background:#a81d26}
+  .fab .faq{position:absolute;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(100% + 10px)}
+  .layers-wrap{padding-right:0}
+  .stage,.alc-stage,.h-stage{height:calc(100svh - 70px - env(safe-area-inset-top,0px) - var(--bar))}
+  .ftr .wrap{padding-block:34px calc(34px + var(--bar))}
+}
+@media (max-width:360px){.fab-cta{font-size:14px}.fab-cta svg{display:none}}
+@media (max-width:900px){.demo{display:none}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+
+
+<!-- ================= LOGO (símbolo reutilizable) ================= -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <clipPath id="mRight"><rect x="139" y="0" width="80" height="140"/></clipPath>
+    <symbol id="mono" viewBox="40 20 335 255">
+      <path fill="#13295a" d="M232 41 C206 31 176 26 148 27 C90 30 54 82 54 140 C54 200 96 248 170 250 L172 246 C112 240 81 196 81 140 C81 82 112 36 150 33 C182 31 210 41 232 54 Z"/>
+      <polygon fill="#13295a" points="228,42 242,36 242,72 235,70"/>
+      <polygon fill="#a8292e" points="183,89 203,111 203,266 183,266"/>
+      <polygon fill="#13295a" points="203,124 266,208 262,214 250,214 203,154"/>
+      <polygon fill="#13295a" points="260,212 339,82 342,84 264,214"/>
+      <polygon fill="#13295a" points="341,88 360,80 360,266 341,266"/>
+    </symbol>
+    <symbol id="logoFull" viewBox="0 20 424 312">
+      <use href="#mono" x="40" y="20" width="335" height="255"/>
+      <rect x="3" y="288" width="175" height="2.4" fill="#13295a"/>
+      <rect x="186" y="288" width="52" height="2.4" fill="#a8292e"/>
+      <rect x="246" y="288" width="175" height="2.4" fill="#13295a"/>
+      <text x="212" y="323" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-weight="500" font-size="15.5" fill="#13295a" textLength="416" lengthAdjust="spacing">INTERIORISMO <tspan fill="#a8292e">•</tspan> DECORACIÓN <tspan fill="#a8292e">•</tspan> REFORMAS</text>
+    </symbol>
+    <symbol id="logo" viewBox="0 0 260 150">
+      <!-- tejado con chimenea -->
+      <path d="M22 70 L130 14 L238 70" fill="none" stroke="#c8252f" stroke-width="13" stroke-linejoin="miter" stroke-linecap="square"/>
+      <rect x="186" y="22" width="16" height="30" fill="#c8252f"/>
+      <path d="M44 72 L130 28 L216 72" fill="none" stroke="#9aa3b2" stroke-width="3.5"/>
+      <!-- CM -->
+      <text x="130" y="118" text-anchor="middle" font-family="Archivo, Arial Black, sans-serif" font-weight="900" font-stretch="112%" font-size="72" fill="#1d3a70" letter-spacing="-3">CM</text>
+      <text x="130" y="118" text-anchor="middle" font-family="Archivo, Arial Black, sans-serif" font-weight="900" font-stretch="112%" font-size="72" fill="#c8252f" letter-spacing="-3" clip-path="url(#mRight)">CM</text>
+      <!-- rótulos -->
+      <text x="130" y="138" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-weight="700" font-size="15.5" fill="#1d3a70" letter-spacing="2.6">AISLAMIENTOS</text>
+      <line x1="62" y1="146" x2="92" y2="146" stroke="#c8252f" stroke-width="1.4"/>
+      <line x1="168" y1="146" x2="198" y2="146" stroke="#c8252f" stroke-width="1.4"/>
+      <text x="130" y="149.5" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-weight="700" font-size="9.5" fill="#c8252f" letter-spacing="2">Y REFORMAS</text>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="curtain" id="curtain"></div>
+
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="CM Reformas, inicio"><svg class="mono" viewBox="0 0 335 255" aria-hidden="true"><use href="#mono"/></svg><span class="wm"><b>CM Reformas</b><small>Interiorismo · Decoración · Reformas</small></span></a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="#inicio" data-r="inicio">Inicio</a>
+      <a href="#servicios" data-r="servicios">Servicios</a>
+      <a href="#pladur" data-r="pladur">Pladur a medida</a>
+      <a href="#trabajos" data-r="trabajos">Trabajos</a>
+      <a href="#contacto" data-r="contacto">Contacto</a>
+      <a class="btn btn-solid btn-quote" href="#contacto">Solicitar presupuesto gratis</a>
+    </nav>
+  </div>
+</header>
+
+<!-- =========================== INICIO =========================== -->
+<main class="page" id="p-inicio" data-page="inicio">
+
+  <section class="story" id="story">
+    <div class="stage">
+      <div class="stage-copy">
+        <span class="eyebrow">Logroño · La Rioja</span>
+        <h1>Tu casa, <em>reformada</em> a tu medida.</h1>
+        <p class="lead">Reformas completas de viviendas y locales, pladur a medida y aislamiento térmico. Te hacemos el estudio y el presupuesto sin compromiso, y te ayudamos con la subvención.</p>
+        <div class="ctas">
+          <a class="btn btn-solid" href="#contacto">Pedir presupuesto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+          <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
+        </div>
+        <div class="scroll-hint mono"><span class="mouse"></span> Desliza y enciende el salón</div>
+      </div>
+
+      <div class="canvas-box" id="canvasBox">
+        <canvas id="wall" role="img" aria-label="Maqueta de un salón con techo de fosa LED, cortinero y mueble de pladur con arcos que se ilumina al hacer scroll"></canvas>
+      </div>
+
+      <div class="layers-wrap">
+        <div class="stage-copy" style="gap:10px">
+          <div class="progress" aria-hidden="true"><i id="prog"></i></div>
+          <ol class="layers" id="layers">
+            <li data-k="0" class="on now"><span class="n">01</span><b>Un salón a tu medida</b><span class="spec">pladur</span></li>
+            <li data-k="1"><span class="n">02</span><b>Techo con fosa LED</b><span class="spec">y focos empotrados</span></li>
+            <li data-k="2"><span class="n">03</span><b>Cortinero</b><span class="spec">luz indirecta</span></li>
+            <li data-k="3"><span class="n">04</span><b>Mueble con arcos</b><span class="spec">baldas iluminadas</span></li>
+            <li data-k="4"><span class="n">05</span><b>Ambiente terminado</b><span class="spec">luz cálida</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="rv" style="display:flex;flex-direction:column;gap:18px">
+          <span class="eyebrow">Reformas en Logroño</span>
+          <h2>Tres oficios, un mismo equipo.</h2>
+        </div>
+        <p class="lead rv d1">Desde aislar una buhardilla hasta reformar un local entero. Cuidamos el detalle y dejamos la obra limpia y ordenada cada día.</p>
+      </div>
+      <div class="svc-grid">
+        <a class="svc rv" href="#servicios">
+          <div class="ph"><img src="img/aislamiento.webp" alt="Trasdosado con perfilería, lana de roca y placa de pladur sobre muro de ladrillo" loading="lazy"></div>
+          <div class="t"><h3>Aislamiento térmico</h3><span class="arrow"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></div>
+          <p>Fachadas, buhardillas y cámaras de aire. Menos frío en invierno, menos calor en verano.</p>
+        </a>
+        <a class="svc rv d1" href="#pladur">
+          <div class="ph"><img src="img/cortinero.webp" alt="Cortinero de pladur con luz LED indirecta" loading="lazy"></div>
+          <div class="t"><h3>Pladur a medida</h3><span class="arrow"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></div>
+          <p>Cortineros, chimeneas, fosas de luz LED, estanterías y huecos para la tele.</p>
+        </a>
+        <a class="svc rv d2" href="#servicios">
+          <div class="ph"><img src="img/reforma.webp" alt="Vivienda en obra durante una reforma integral" loading="lazy"></div>
+          <div class="t"><h3>Reformas completas</h3><span class="arrow"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></span></div>
+          <p>Nos encargamos de todo el proceso, de la demolición al último remate.</p>
+        </a>
+      </div>
+      <div class="chips rv">
+        <span class="chip"><i></i>Techos insonorizados</span>
+        <span class="chip"><i></i>Humedades</span>
+        <span class="chip"><i></i>Locales y escaparates</span>
+        <span class="chip"><i></i>Ventilación con recuperación de calor</span>
+        <span class="chip"><i></i>Placas de yeso en exterior</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="rv" style="display:flex;flex-direction:column;gap:18px">
+          <span class="eyebrow">Obras recientes</span>
+          <h2>Así trabajamos por dentro.</h2>
+        </div>
+        <div class="rv d1" style="display:flex;flex-direction:column;gap:18px;align-items:flex-start">
+          <p class="lead">Fotos reales de nuestras obras en La Rioja, antes de rematar. La estructura es lo que no se ve, y es donde nos esmeramos.</p>
+          <a class="btn btn-ghost" href="#trabajos">Ver todos los trabajos</a>
+        </div>
+      </div>
+      <div class="recent">
+        <a class="rc big" data-slide="1" href="#trabajos"><img src="img/salon.webp" alt="Mueble de salón de pladur con arcos en obra" loading="lazy"><span><em class="mono">Logroño · enero</em><b>Mueble de salón en pladur</b></span></a>
+        <a class="rc" data-slide="-1" href="#trabajos"><img src="img/biblioteca.webp" alt="Estructura de mueble biblioteca con arcos" loading="lazy"><span><em class="mono">Alfaro</em><b>Mueble biblioteca</b></span></a>
+        <a class="rc" data-slide="1" href="#trabajos"><img src="img/techo-perfiles.webp" alt="Estructura de techo insonorizado con Silentblock" loading="lazy"><span><em class="mono">Local</em><b>Techo insonorizado</b></span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec band">
+    <div class="wrap sub-grid">
+      <div>
+        <span class="eyebrow rv">Ayudas al aislamiento</span>
+        <div class="big40 rv d1" aria-label="Hasta un 40 por ciento">40<small>%</small></div>
+        <h2 class="rv d1" style="font-size:clamp(28px,3.2vw,42px)">Hasta un 40&nbsp;% del coste puede venir de una subvención.</h2>
+        <p class="lead rv d2">Estudiamos tu vivienda, te pasamos el presupuesto y gestionamos el papeleo de la ayuda contigo.</p>
+        <div class="rv d3"><a class="btn btn-solid" href="#contacto">Consultar mi caso <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div>
+      </div>
+      <div class="rv armed-bars" id="bars">
+        <div class="tbl-scroll">
+        <table class="tbl">
+          <thead><tr><th>Actuación</th><th>Ahorro energético estimado</th></tr></thead>
+          <tbody>
+            <tr><td><b>Fachadas</b><span>Trasdosado interior: perfilería, lana de roca y pladur</span></td><td><div class="bar"><span class="tr"><i style="--w:75%"></i></span><b>30&nbsp;%</b></div></td></tr>
+            <tr><td><b>Cubiertas y buhardillas</b><span>Aislamiento en cubiertas inclinadas</span></td><td><div class="bar"><span class="tr"><i style="--w:62.5%"></i></span><b>25&nbsp;%</b></div></td></tr>
+            <tr><td><b>Cámaras de aire</b><span>Insuflado de celulosa o lana de roca</span></td><td><div class="bar"><span class="tr"><i style="--w:50%"></i></span><b>20&nbsp;%</b></div></td></tr>
+          </tbody>
+        </table>
+        </div>
+        <p class="foot" style="margin-top:16px">Valores máximos orientativos («hasta»), escala de 0 a 40&nbsp;%. Las cuantías de la ayuda varían según el programa, la comunidad autónoma y la vivienda.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="rv" style="display:flex;flex-direction:column;gap:18px">
+          <span class="eyebrow">Piezas prefabricadas</span>
+          <h2>Pladur con diseño, hecho a medida.</h2>
+        </div>
+        <div class="rv d1" style="display:flex;flex-direction:column;gap:18px;align-items:flex-start">
+          <p class="lead">Cuéntanos tu idea y la hacemos realidad. Piezas pensadas para tu espacio, con luz integrada si la quieres.</p>
+          <a class="btn btn-ghost" href="#pladur">Ver piezas</a>
+        </div>
+      </div>
+      <div class="strip rv d1">
+        <a class="piece" href="#pladur" style="text-decoration:none"><div class="ph"><img src="img/cortinero.webp" alt="Cortinero de pladur con LED" loading="lazy"></div><div class="lbl"><b>Cortineros</b><span class="mono">LED indirecto</span></div></a>
+        <a class="piece" href="#pladur" style="text-decoration:none"><div class="ph"><img src="img/chimenea.webp" alt="Chimenea revestida en pladur" loading="lazy"></div><div class="lbl"><b>Chimeneas</b><span class="mono">revestimiento</span></div></a>
+        <a class="piece" href="#pladur" style="text-decoration:none"><div class="ph"><img src="img/fosa-led.webp" alt="Techo con fosa de luz LED" loading="lazy"></div><div class="lbl"><b>Fosas de luz LED</b><span class="mono">techos</span></div></a>
+        <a class="piece" href="#pladur" style="text-decoration:none"><div class="ph"><img src="img/estanteria.webp" alt="Estantería de pladur iluminada" loading="lazy"></div><div class="lbl"><b>Estanterías</b><span class="mono">y huecos de TV</span></div></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="rv" style="display:flex;flex-direction:column;gap:18px">
+          <span class="eyebrow">Cómo trabajamos</span>
+          <h2>De la primera visita a la entrega.</h2>
+        </div>
+        <p class="lead rv d1">Un solo interlocutor durante toda la obra y un presupuesto cerrado antes de empezar.</p>
+      </div>
+      <div class="steps">
+        <div class="step rv"><span class="n">01</span><b>Visita y medición</b><p>Vemos la vivienda o el local y escuchamos lo que necesitas.</p></div>
+        <div class="step rv d1"><span class="n">02</span><b>Presupuesto</b><p>Sin compromiso, con cada partida explicada.</p></div>
+        <div class="step rv d2"><span class="n">03</span><b>Subvención</b><p>Si hay ayuda disponible, la gestionamos contigo.</p></div>
+        <div class="step rv d3"><span class="n">04</span><b>Obra limpia</b><p>Ordenada y segura cada día que estamos en tu casa.</p></div>
+        <div class="step rv d3"><span class="n">05</span><b>Entrega</b><p>Repasamos contigo cada remate antes de irnos.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" data-cta></section>
+</main>
+
+<!-- =========================== SERVICIOS =========================== -->
+<main class="page" id="p-servicios" data-page="servicios">
+  <section class="phead"><div class="wrap">
+    <span class="eyebrow">Servicios de reforma en Logroño y La Rioja</span>
+    <h1>Todo lo que tu casa necesita, <span class="r">por dentro</span>.</h1>
+    <p class="lead">Trabajamos en viviendas y locales de Logroño y alrededores. Estos son nuestros trabajos principales.</p>
+  </div></section>
+
+  <div class="wrap">
+    <article class="srv">
+      <div class="srv-img rv"><img class="px" src="img/aislamiento.webp" alt="Trasdosado de pladur con lana de roca" loading="lazy"></div>
+      <div class="srv-txt rv d1">
+        <span class="tag">AISLAMIENTO TÉRMICO</span>
+        <h2>Menos factura, más confort.</h2>
+        <p class="lead">Aislamos fachadas, cubiertas y cámaras de aire para que la casa guarde el calor en invierno y el fresco en verano.</p>
+        <ul class="ticks">
+          <li>Fachadas: trasdosado interior con perfilería, lana de roca y pladur</li>
+          <li>Cubiertas inclinadas y buhardillas</li>
+          <li>Cámaras de aire: insuflado de celulosa o lana de roca</li>
+          <li>Te ayudamos a pedir la subvención</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="srv">
+      <div class="srv-img rv"><img class="px" src="img/fosa-led.webp" alt="Techo de pladur con fosa de luz LED" loading="lazy"></div>
+      <div class="srv-txt rv d1">
+        <span class="tag">PLADUR A MEDIDA</span>
+        <h2>Piezas que cambian una habitación.</h2>
+        <p class="lead">Diseñamos y montamos piezas prefabricadas en pladur adaptadas a cada espacio.</p>
+        <ul class="ticks">
+          <li>Cortineros y fosas con luz LED</li>
+          <li>Chimeneas, estanterías y muebles de salón</li>
+          <li>Huecos para TV empotrada</li>
+          <li>Tabiques y techos</li>
+        </ul>
+        <div><a class="btn btn-ghost" href="#pladur">Ver piezas</a></div>
+      </div>
+    </article>
+
+    <article class="srv">
+      <div class="srv-img rv"><img class="px" src="img/reforma.webp" alt="Reforma integral en curso" loading="lazy"></div>
+      <div class="srv-txt rv d1">
+        <span class="tag">REFORMAS COMPLETAS</span>
+        <h2>Una reforma sin dolores de cabeza.</h2>
+        <p class="lead">Nos encargamos de todo el proceso con planificación y un equipo propio, para que el presupuesto no se dispare.</p>
+        <ul class="ticks">
+          <li>Viviendas y locales comerciales</li>
+          <li>Distribución nueva con tabiquería de pladur</li>
+          <li>Acabados y remates</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="srv">
+      <div class="srv-img rv"><img class="px" src="img/columna.webp" alt="Local comercial durante trabajos de renovación" loading="lazy"></div>
+      <div class="srv-txt rv d1">
+        <span class="tag">HUMEDADES · LOCALES</span>
+        <h2>Paredes sanas y locales renovados.</h2>
+        <p class="lead">Tratamos problemas de humedad en paredes y actualizamos escaparates e interiores de comercios.</p>
+        <ul class="ticks">
+          <li>Diagnóstico y tratamiento de humedades</li>
+          <li>Renovación de escaparates y revestimientos</li>
+          <li>Pequeñas reparaciones de local</li>
+          <li>Placas de yeso en zonas exteriores</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="srv">
+      <div class="srv-img rv"><img class="px" src="img/techo-varillas.webp" alt="Varillas Silentblock colgadas del forjado para un techo insonorizado" loading="lazy"></div>
+      <div class="srv-txt rv d1">
+        <span class="tag">TECHOS INSONORIZADOS</span>
+        <h2>Silencio entre plantas.</h2>
+        <p class="lead">Falsos techos de pladur con sistema Silentblock que cortan el ruido y las vibraciones. Compatibles con aislamiento térmico.</p>
+        <ul class="ticks">
+          <li>Doble placa de yeso laminado</li>
+          <li>Varillas antivibración Silentblock y lana mineral</li>
+          <li>Viviendas, oficinas, estudios y hostelería</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="srv">
+      <div class="srv-plain rv"><canvas id="airflow" aria-label="Animación de flujo de aire con recuperación de calor"></canvas></div>
+      <div class="srv-txt rv d1">
+        <span class="tag">VENTILACIÓN</span>
+        <h2>Aire limpio sin perder calor.</h2>
+        <p class="lead">Instalamos sistemas de ventilación con recuperación de calor: sacan el aire viciado y meten aire filtrado del exterior aprovechando su temperatura.</p>
+        <ul class="ticks">
+          <li>Ventilación de doble flujo</li>
+          <li>Filtrado del aire exterior</li>
+          <li>Pensado para viviendas más eficientes</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+  <section class="cta" data-cta></section>
+</main>
+
+<!-- =========================== PLADUR =========================== -->
+<main class="page" id="p-pladur" data-page="pladur">
+  <section class="phead"><div class="wrap">
+    <span class="eyebrow">Pladur a medida en Logroño</span>
+    <h1>Diseño que <span class="r">transforma</span> espacios.</h1>
+    <p class="lead">Piezas prefabricadas en pladur hechas para tu salón, tu dormitorio o tu local. Tú nos cuentas la idea y nosotros la dibujamos, la fabricamos y la montamos. Baja para recorrer cada pieza.</p>
+  </div></section>
+
+  <section class="alcoves" id="alcoves">
+    <div class="alc-stage">
+      <div class="alc-world" id="alcWorld">
+        <article class="alc" data-i="0">
+          <div class="niche"><img src="img/cortinero.webp" alt="Cortinero de pladur con LED cálido sobre cortina"></div>
+          <div class="alc-copy"><span class="mono">Pieza 01</span><h2>Cortineros</h2><p>Esconden el riel y bañan la cortina de luz cálida. Se hacen a la medida exacta de la ventana.</p><span class="spec">LED indirecto · a medida</span></div>
+        </article>
+        <article class="alc" data-i="1">
+          <div class="niche"><img src="img/chimenea.webp" alt="Chimenea revestida con pladur"></div>
+          <div class="alc-copy"><span class="mono">Pieza 02</span><h2>Chimeneas</h2><p>Un volumen limpio que integra la chimenea en la pared, con luz bajo la repisa si la quieres.</p><span class="spec">revestimiento · luz inferior</span></div>
+        </article>
+        <article class="alc" data-i="2">
+          <div class="niche"><img src="img/fosa-led.webp" alt="Techo de pladur con fosa de luz LED"></div>
+          <div class="alc-copy"><span class="mono">Pieza 03</span><h2>Fosas de luz LED</h2><p>Techos con el perímetro iluminado y focos empotrados. Cambian por completo la luz de un salón.</p><span class="spec">techos · focos empotrados</span></div>
+        </article>
+        <article class="alc" data-i="3">
+          <div class="niche"><img src="img/estanteria.webp" alt="Estantería de pladur con baldas iluminadas"></div>
+          <div class="alc-copy"><span class="mono">Pieza 04</span><h2>Estanterías y TV</h2><p>Baldas iluminadas y hueco para la televisión empotrada, aprovechando cada centímetro de la pared.</p><span class="spec">mueble de obra · hueco TV</span></div>
+        </article>
+      </div>
+      <ol class="alc-nav" id="alcNav" aria-label="Piezas">
+        <li class="on">Cortineros</li><li>Chimeneas</li><li>Fosas LED</li><li>Estanterías</li>
+      </ol>
+      <div class="alc-bar" aria-hidden="true"><i id="alcBar"></i></div>
+    </div>
+  </section>
+
+  <div class="wrap" style="padding-block:clamp(60px,8vw,110px) 0">
+    <div class="sec-head">
+      <div class="rv" style="display:flex;flex-direction:column;gap:18px"><span class="eyebrow">La luz lo cambia todo</span><h2>Desliza y enciende el mueble.</h2></div>
+      <p class="lead rv d1">El mismo mueble de pladur con arcos, con la luz apagada y con la iluminación LED integrada encendida.</p>
+    </div>
+    <div class="rv">
+        <figure class="ba" style="--pos:50%">
+          <img class="ba-after" src="img/ba/maqueta-despues.webp" alt="Mueble de pladur con arcos (encendido)" loading="lazy">
+          <div class="ba-before"><img src="img/ba/maqueta-antes.webp" alt="Mueble de pladur con arcos (apagado)" loading="lazy"></div>
+          <span class="ba-tag l">Apagado</span><span class="ba-tag r">Encendido</span><span class="ba-handle" aria-hidden="true"></span>
+          <input type="range" min="0" max="100" value="50" aria-label="Deslizar para comparar: apagado y encendido">
+          <figcaption>Maqueta de un mueble de salón en pladur con baldas iluminadas, fosa LED y chimenea.</figcaption>
+        </figure>
+    </div>
+  </div>
+
+  <div class="wrap" style="padding-block:clamp(60px,8vw,110px)">
+    <div class="feat">
+      <div class="rv"><b>Acabados profesionales</b><span>Juntas invisibles, aristas rectas.</span></div>
+      <div class="rv d1"><b>Materiales de calidad</b><span>Placa y perfilería certificadas.</span></div>
+      <div class="rv d2"><b>Totalmente a medida</b><span>Cada pieza se dibuja para tu espacio.</span></div>
+      <div class="rv d3"><b>Instalación rápida y limpia</b><span>Llegamos con la pieza preparada.</span></div>
+    </div>
+  </div>
+  <section class="cta" data-cta></section>
+</main>
+
+<!-- =========================== TRABAJOS =========================== -->
+<main class="page" id="p-trabajos" data-page="trabajos">
+  <section class="hscroll" id="hscroll">
+    <div class="h-stage">
+      <div class="h-track" id="hTrack">
+        <div class="h-intro">
+          <span class="eyebrow">Trabajos</span>
+          <h1>Obras <span class="r">reales</span> en Logroño.</h1>
+          <p class="lead">Una selección de proyectos recientes. Cada día cuidamos que la obra quede limpia, ordenada y segura.</p>
+          <span class="scroll-hint mono"><span class="mouse"></span> Baja para pasar los trabajos</span>
+        </div>
+
+        <figure class="h-card tall"><img src="img/escaparate.webp" alt="Escaparate de local revestido con piedra decorativa">
+          <figcaption><span class="mono">Local comercial · Logroño · junio</span><b>Escaparate con piedra decorativa</b></figcaption></figure>
+
+        <div class="h-text">
+          <span class="eyebrow">El proyecto</span>
+          <h2>Actualización de escaparate y retoques del local.</h2>
+          <p class="lead">Nuevo frente del escaparate con revestimiento de piedra decorativa y pequeños trabajos de renovación en el interior, con la tienda abierta.</p>
+          <dl class="facts"><dt>Lugar</dt><dd>Logroño</dd><dt>Tipo</dt><dd>Escaparate e interior de comercio</dd><dt>Fecha</dt><dd>Junio</dd></dl>
+        </div>
+
+        <figure class="h-card"><img src="img/columna.webp" alt="Columna del local pintada en verde durante la obra">
+          <figcaption><span class="mono">Mismo local · interior</span><b>Columna renovada</b></figcaption></figure>
+
+        <div class="h-text">
+          <span class="eyebrow">Humedades</span>
+          <h2>Tratamiento de humedad en paredes.</h2>
+          <p class="lead">Nos llamaron por problemas de humedad en las paredes de un local. Hicimos un trabajo completo para sanearlas y dejarlas listas.</p>
+          <dl class="facts"><dt>Lugar</dt><dd>Logroño</dd><dt>Tipo</dt><dd>Local comercial</dd><dt>Fecha</dt><dd>Mayo</dd></dl>
+        </div>
+
+        <figure class="h-card tall"><img src="img/salon.webp" alt="Mueble de salón de pladur con arcos y hueco de TV, antes de pintar" loading="lazy">
+          <figcaption><span class="mono">Vivienda · Logroño · enero</span><b>Mueble de salón en pladur</b></figcaption></figure>
+
+        <div class="h-text">
+          <span class="eyebrow">Pladur a medida</span>
+          <h2>Del perfil al mueble terminado.</h2>
+          <p class="lead">Muebles de salón y bibliotecas diseñados para cada pared: arcos, baldas, hueco para la tele y luz integrada. Así se ven por dentro antes de rematar.</p>
+          <dl class="facts"><dt>Salón</dt><dd>Logroño · enero</dd><dt>Biblioteca</dt><dd>Alfaro</dd></dl>
+        </div>
+
+        <figure class="h-card"><img src="img/biblioteca.webp" alt="Estructura metálica de un mueble biblioteca con arcos, a falta de colocar la placa" loading="lazy">
+          <figcaption><span class="mono">Vivienda · Alfaro</span><b>Mueble estilo biblioteca, en estructura</b></figcaption></figure>
+
+        <figure class="h-card tall"><img src="img/techo-perfiles.webp" alt="Estructura de falso techo insonorizado con varillas Silentblock en un local" loading="lazy">
+          <figcaption><span class="mono">Local · techo acústico</span><b>Techo insonorizado con Silentblock</b></figcaption></figure>
+
+        <div class="h-text">
+          <span class="eyebrow">Techos acústicos</span>
+          <h2>Menos ruido entre estancias.</h2>
+          <p class="lead">Falso techo que reduce el paso del sonido y las vibraciones. Ideal para viviendas, oficinas, hostelería y locales.</p>
+          <ul class="ticks"><li>Doble placa de yeso laminado</li><li>Varillas antivibración Silentblock</li><li>Lana mineral</li><li>Cola de contacto para aislamiento acústico</li></ul>
+        </div>
+
+        <div class="h-end">
+          <h2>¿El siguiente es el tuyo?</h2>
+          <p class="lead">Te enseñamos fotos de obras terminadas parecidas a la que tienes en mente.</p>
+          <a class="btn btn-solid" href="#contacto">Pedir presupuesto <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+      <div class="wrap h-foot"><div class="alc-bar"><i id="hBar"></i></div><span class="mono" id="hCount">01 / 10</span></div>
+    </div>
+  </section>
+
+  <section class="sec" id="baSec" hidden>
+    <div class="wrap">
+      <div class="sec-head">
+        <div style="display:flex;flex-direction:column;gap:18px"><span class="eyebrow">Antes y después</span><h2>Mismo espacio, otra vida.</h2></div>
+        <p class="lead">Desliza sobre cada foto para comparar cómo estaba y cómo quedó.</p>
+      </div>
+      <div class="ba-grid" id="baGrid"></div>
+    </div>
+  </section>
+  <section class="cta" data-cta></section>
+</main>
+
+<!-- =========================== CONTACTO =========================== -->
+<main class="page" id="p-contacto" data-page="contacto">
+  <section class="phead"><div class="wrap">
+    <span class="eyebrow">Contacto</span>
+    <h1>Pide tu presupuesto <span class="r">sin compromiso</span>.</h1>
+    <p class="lead">Llámanos, escríbenos por WhatsApp o déjanos tus datos y te contactamos.</p>
+  </div></section>
+
+  <div class="wrap" style="padding-bottom:clamp(70px,9vw,130px)">
+    <div class="ct-grid">
+      <div class="ct-info">
+        <div class="ct-card rv"><span class="mono">Teléfono</span><div class="row"><span class="num">614 184 114</span><div class="acts"><a class="call" href="tel:+34614184114">Llamar</a><button class="copy" data-copy="614184114" type="button">Copiar</button></div></div></div>
+        <div class="ct-card rv d1"><span class="mono">Teléfono</span><div class="row"><span class="num">642 407 195</span><div class="acts"><a class="call" href="tel:+34642407195">Llamar</a><button class="copy" data-copy="642407195" type="button">Copiar</button></div></div></div>
+        <a class="wa rv d2" href="https://wa.me/34614184114?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20me%20gustar%C3%ADa%20pedir%20presupuesto." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.6 11.6 0 0 0 4.4 3.9c1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.6-.4Z"/></svg>
+          Escríbenos por WhatsApp
+        </a>
+        <p class="foot rv">Zona de trabajo: Logroño y La Rioja. Hemos trabajado también en Alfaro.</p>
+      </div>
+
+      <form id="form" class="rv d1" novalidate>
+        <label for="f-name">Nombre<input id="f-name" name="name" autocomplete="name" placeholder="Tu nombre" required></label>
+        <label for="f-tel">Teléfono<input id="f-tel" name="tel" type="tel" autocomplete="tel" placeholder="600 000 000" required></label>
+        <label for="f-loc">Localidad<input id="f-loc" name="loc" list="locs" autocomplete="address-level2" placeholder="Logroño"></label>
+        <datalist id="locs"><option value="Logroño"><option value="Alfaro"><option value="Calahorra"><option value="Haro"><option value="Arnedo"><option value="Nájera"><option value="Lardero"><option value="Villamediana de Iregua"><option value="Santo Domingo de la Calzada"></datalist>
+        <label for="f-bud">Presupuesto aproximado<select id="f-bud" name="bud">
+          <option value="">Aún no lo sé</option><option>Menos de 3.000 €</option><option>De 3.000 a 10.000 €</option><option>De 10.000 a 25.000 €</option><option>Más de 25.000 €</option>
+        </select></label>
+        <fieldset class="full" style="border:0;padding:0;margin:0;display:flex;flex-direction:column;gap:10px">
+          <legend class="mono" style="text-transform:uppercase;letter-spacing:.06em;font-size:13px;margin-bottom:10px">Qué necesitas</legend>
+          <div class="opts">
+            <label><input id="o1" type="checkbox" name="t" value="Aislamiento"><span>Aislamiento</span></label>
+            <label><input id="o2" type="checkbox" name="t" value="Pladur a medida"><span>Pladur a medida</span></label>
+            <label><input id="o3" type="checkbox" name="t" value="Reforma integral"><span>Reforma integral</span></label>
+            <label><input id="o7" type="checkbox" name="t" value="Techo insonorizado"><span>Techo insonorizado</span></label>
+            <label><input id="o4" type="checkbox" name="t" value="Humedades"><span>Humedades</span></label>
+            <label><input id="o5" type="checkbox" name="t" value="Local"><span>Local o escaparate</span></label>
+            <label><input id="o6" type="checkbox" name="t" value="Subvención"><span>Subvención</span></label>
+          </div>
+        </fieldset>
+        <div class="full upl">
+          <span class="mono upl-lbl">Fotos del espacio (opcional)</span>
+          <label class="drop" for="f-photos" id="drop">
+            <input id="f-photos" name="photos" type="file" accept="image/*" multiple>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" width="26" height="26"><path d="M4 7h3l2-2.5h6L17 7h3v12H4z"/><circle cx="12" cy="13" r="3.6"/></svg>
+            <span><b>Añade fotos</b> de la habitación o la zona a reformar</span>
+            <small>Hasta 6 fotos. Nos ayudan a darte un presupuesto más ajustado.</small>
+          </label>
+          <div class="thumbs" id="thumbs"></div>
+        </div>
+        <label class="full" for="f-msg">Cuéntanos tu idea<textarea id="f-msg" name="msg" placeholder="Por ejemplo: quiero aislar la buhardilla y hacer un cortinero con LED en el salón."></textarea></label>
+        <div class="full"><button class="btn btn-solid" type="submit">Enviar solicitud <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8h11M9 4l4 4-4 4"/></svg></button></div>
+        <div class="form-ok" id="formOk" hidden></div>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <a href="#inicio" aria-label="Inicio" class="flogo"><svg viewBox="0 0 424 312"><use href="#logoFull"/></svg></a>
+    <p class="mono ftr-seo">Reformas integrales, pladur a medida, techos insonorizados y aislamiento térmico en Logroño, Alfaro y toda La Rioja.</p>
+    <nav>
+      <a href="#servicios">Servicios</a><a href="#pladur">Pladur a medida</a><a href="#trabajos">Trabajos</a><a href="#contacto">Contacto</a>
+    </nav>
+    <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end"><span class="mono">CM Reformas SL · Logroño · 614 184 114 · 642 407 195</span><span class="mono" style="font-size:11px;opacity:.75">Diseño web: CRS Digital</span></div>
+  </div>
+</footer>
+
+
+
+<div class="fab" id="fab">
+  <section class="faq" id="faq" hidden aria-label="Preguntas rápidas">
+    <header><div><b>Preguntas rápidas</b><span>CM Aislamientos y Reformas</span></div><button type="button" class="faq-x" id="faqClose" aria-label="Cerrar">×</button></header>
+    <div class="faq-log" id="faqLog" aria-live="polite">
+      <div class="msg them">Hola 👋 ¿En qué te ayudamos? Toca una pregunta.</div>
+    </div>
+    <div class="faq-qs" id="faqQs"></div>
+  </section>
+  <button type="button" class="fab-btn fab-q" id="faqBtn" aria-expanded="false" aria-controls="faq" aria-label="Preguntas rápidas">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/><path d="M9.6 9.4a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.4M12 16.6h.01"/></svg>
+    <span class="fab-lbl">Preguntas</span>
+  </button>
+  <a class="fab-btn fab-wa" href="https://wa.me/34614184114?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20me%20gustar%C3%ADa%20pedir%20presupuesto." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.6 11.6 0 0 0 4.4 3.9c1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.6-.4Z"/></svg>
+  </a>
+  <a class="fab-cta" href="#contacto">Solicitar presupuesto gratis <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" width="16" height="16"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+</div>
+
+<template id="ctaTpl">
+  <div class="cta-bg" aria-hidden="true"></div>
+  <svg class="roof" viewBox="0 0 335 255" aria-hidden="true"><use href="#mono"/></svg>
+  <div class="wrap">
+    <div style="display:flex;flex-direction:column;gap:20px;min-width:0">
+      <span class="eyebrow">Presupuesto sin compromiso</span>
+      <h2>Cuéntanos tu idea y la hacemos realidad.</h2>
+      <p>Te ayudamos a mejorar tu vivienda y a conseguir la máxima subvención.</p>
+    </div>
+    <div class="phones">
+      <div class="phone"><span class="num">614 184 114</span><div class="acts"><a class="call" href="tel:+34614184114">Llamar</a><button class="copy" data-copy="614184114" type="button">Copiar</button></div></div>
+      <div class="phone"><span class="num">642 407 195</span><div class="acts"><a class="call" href="tel:+34642407195">Llamar</a><button class="copy" data-copy="642407195" type="button">Copiar</button></div></div>
+      <a class="btn btn-solid" href="#contacto" style="background:var(--red);border-color:var(--red);justify-content:center">Escribirnos</a>
+    </div>
+  </div>
+</template>
+
+<script>
+/* ---------- CTA compartido ---------- */
+document.querySelectorAll('[data-cta]').forEach(s=>s.appendChild(document.getElementById('ctaTpl').content.cloneNode(true)));
+
+/* ---------- copiar teléfonos ---------- */
+document.addEventListener('click',e=>{
+  const b=e.target.closest('.copy'); if(!b) return;
+  const t=b.dataset.copy, done=()=>{b.textContent='Copiado';b.classList.add('ok');setTimeout(()=>{b.textContent='Copiar';b.classList.remove('ok')},1600)};
+  try{navigator.clipboard.writeText(t).then(done,()=>sel(b))}catch(_){sel(b)}
+  function sel(btn){const n=btn.closest('.phone,.row').querySelector('.num');const r=document.createRange();r.selectNodeContents(n);const s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='Seleccionado'}
+});
+
+/* ---------- menú móvil ---------- */
+const burger=document.getElementById('burger');
+function setMenu(o){document.body.classList.toggle('menu-open',o);document.documentElement.classList.toggle('menu-lock',o);burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'Cerrar menú':'Abrir menú');try{if(window.lenis){o?lenis.stop():lenis.start()}}catch(_){}}
+burger.addEventListener('click',()=>setMenu(!document.body.classList.contains('menu-open')));
+
+/* ---------- cabecera ---------- */
+addEventListener('scroll',()=>document.getElementById('hdr').classList.toggle('scrolled',scrollY>8),{passive:true});
+
+/* ---------- revelados ---------- */
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.14,rootMargin:'0px 0px -6% 0px'});
+function armReveals(root){
+  root.querySelectorAll('.rv,.armed-bars').forEach(el=>{
+    el.classList.remove('in');
+    const r=el.getBoundingClientRect();
+    if(r.top<innerHeight*0.92){el.classList.add('in');return}
+    el.classList.add('armed');io.observe(el);
+  });
+}
+
+/* ---------- parallax suave en imágenes de servicios ---------- */
+function parallax(){
+  document.querySelectorAll('.page.active .px').forEach(img=>{
+    const r=img.parentElement.getBoundingClientRect();
+    if(r.bottom<0||r.top>innerHeight) return;
+    const p=(r.top+r.height/2-innerHeight/2)/innerHeight;
+    img.style.transform=`translateY(${(-8 - p*10).toFixed(2)}%)`;
+  });
+}
+addEventListener('scroll',parallax,{passive:true});
+
+/* ---------- fotos que entran de lado siguiendo el scroll (y se quedan) ---------- */
+const slides=[...document.querySelectorAll('[data-slide]')];
+slides.forEach(el=>{el._p=0});
+function slideIn(){
+  const H=innerHeight;
+  slides.forEach(el=>{
+    if(el._p>=1||!el.offsetParent) return;
+    const top=el.getBoundingClientRect().top;
+    const p=Math.min(1,Math.max(0,(H-top)/(H*.62)));
+    if(p<=el._p&&el._set) return;
+    el._p=Math.max(el._p,p);el._set=true;
+    const e=1-Math.pow(1-el._p,3), d=+el.dataset.slide;
+    el.style.transform=el._p>=1?'':`translateX(${(d*(1-e)*105).toFixed(2)}%) rotate(${(d*(1-e)*4).toFixed(2)}deg)`;
+    el.style.opacity=(.1+.9*e).toFixed(3);
+  });
+}
+addEventListener('scroll',slideIn,{passive:true});addEventListener('resize',slideIn);addEventListener('route',()=>requestAnimationFrame(slideIn));
+slideIn();
+
+/* ---------- tarjetas con inclinación 3D ---------- */
+document.querySelectorAll('.tilt .card, .piece .ph').forEach(c=>{
+  c.addEventListener('pointermove',e=>{
+    if(e.pointerType!=='mouse') return;
+    const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+    c.style.transform=`rotateY(${(x-.5)*10}deg) rotateX(${(.5-y)*8}deg) translateZ(0)`;
+    c.style.boxShadow=`${(.5-x)*24}px ${(.5-y)*24+18}px 40px -18px rgba(16,27,48,.28)`;
+    c.style.setProperty('--gx',x*100+'%');c.style.setProperty('--gy',y*100+'%');
+  });
+  c.addEventListener('pointerleave',()=>{c.style.transform='';c.style.boxShadow=''});
+});
+
+/* ---------- formulario (demo) ---------- */
+/* ---------- antes y después ---------- */
+// Para añadir obras reales: una línea por obra, con sus dos fotos en img/ba/. La sección aparece sola en Trabajos.
+const ANTES_DESPUES=[
+  // {antes:'img/ba/salon-antes.webp', despues:'img/ba/salon-despues.webp', texto:'Mueble de salón en pladur · Logroño'},
+];
+(function(){
+  const sec=document.getElementById('baSec'),grid=document.getElementById('baGrid');
+  if(ANTES_DESPUES.length){
+    grid.innerHTML=ANTES_DESPUES.map(o=>`<figure class="ba" style="--pos:50%"><img class="ba-after" src="${o.despues}" alt="${o.texto} (después)" loading="lazy"><div class="ba-before"><img src="${o.antes}" alt="${o.texto} (antes)" loading="lazy"></div><span class="ba-tag l">Antes</span><span class="ba-tag r">Después</span><span class="ba-handle" aria-hidden="true"></span><input type="range" min="0" max="100" value="50" aria-label="Deslizar para comparar antes y después"><figcaption>${o.texto}</figcaption></figure>`).join('');
+    sec.hidden=false;
+  }
+  document.addEventListener('input',e=>{const r=e.target;if(r.matches('.ba input'))r.closest('.ba').style.setProperty('--pos',r.value+'%')});
+})();
+
+/* ---------- fotos del formulario ---------- */
+const photos=[];const pin=document.getElementById('f-photos'),thumbs=document.getElementById('thumbs'),drop=document.getElementById('drop');
+function addFiles(list){[...list].filter(f=>f.type.startsWith('image/')).forEach(f=>{if(photos.length<6)photos.push(f)});renderThumbs();pin.value=''}
+function renderThumbs(){thumbs.innerHTML='';photos.forEach((f,i)=>{const d=document.createElement('div');d.className='thumb';const im=document.createElement('img');im.alt='Foto '+(i+1);im.src=URL.createObjectURL(f);im.onload=()=>URL.revokeObjectURL(im.src);const x=document.createElement('button');x.type='button';x.textContent='×';x.setAttribute('aria-label','Quitar foto '+(i+1));x.onclick=()=>{photos.splice(i,1);renderThumbs()};d.append(im,x);thumbs.append(d)});
+  drop.querySelector('small').textContent=photos.length?`${photos.length} de 6 fotos añadidas`:'Hasta 6 fotos. Nos ayudan a darte un presupuesto más ajustado.'}
+pin.addEventListener('change',()=>addFiles(pin.files));
+['dragenter','dragover'].forEach(t=>drop.addEventListener(t,e=>{e.preventDefault();drop.classList.add('over')}));
+['dragleave','drop'].forEach(t=>drop.addEventListener(t,e=>{e.preventDefault();drop.classList.remove('over')}));
+drop.addEventListener('drop',e=>addFiles(e.dataTransfer.files));
+
+document.getElementById('form').addEventListener('submit',e=>{
+  e.preventDefault();
+  const f=e.target, ok=document.getElementById('formOk');
+  const n=f.name.value.trim(), t=f.tel.value.trim();
+  if(!n||!t){ok.hidden=false;ok.textContent='Escribe tu nombre y un teléfono para que podamos llamarte.';(n?f.tel:f.name).focus();return}
+  const types=[...f.querySelectorAll('input[name=t]:checked')].map(x=>x.value);
+  const bits=[types.length?types.join(', '):null,f.loc.value.trim()||null,f.bud.value||null,photos.length?`${photos.length} foto${photos.length>1?'s':''}`:null].filter(Boolean);
+  ok.hidden=false;ok.textContent=`Gracias, ${n}. Tu solicitud${bits.length?' ('+bits.join(' · ')+')':''} está lista. En la web definitiva llegará directamente al correo de CM Reformas; en esta muestra el formulario no envía datos.`;
+});
+
+/* ---------- router por hash ---------- */
+const routes=['inicio','servicios','pladur','trabajos','contacto'];
+let current=null;
+function show(initial){
+  const h=(location.hash||'#inicio').slice(1);
+  const r=routes.includes(h)?h:'inicio';
+  if(r===current) return;
+  const swap=()=>{
+    document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.dataset.page===r));
+    document.querySelectorAll('.nav a[data-r]').forEach(a=>{if(a.dataset.r===r)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+    if(lenis)lenis.scrollTo(0,{immediate:true,force:true});scrollTo({top:0,behavior:'instant'});
+    current=r;
+    setMenu(false);
+    requestAnimationFrame(()=>{armReveals(document.getElementById('p-'+r));parallax();window.dispatchEvent(new CustomEvent('route',{detail:r}))});
+  };
+  if(initial||matchMedia('(prefers-reduced-motion: reduce)').matches){swap();return}
+  const c=document.getElementById('curtain');c.classList.remove('go');void c.offsetWidth;c.classList.add('go');
+  setTimeout(swap,400);
+}
+addEventListener('hashchange',()=>show(false));
+show(true);
+
+
+/* scroll nativo del navegador: en Mac el trackpad ya es suave y un scroll "suavizado" por código se notaba con retraso */
+var lenis=null;
+
+/* ---------- pladur: recorrido en profundidad ---------- */
+(function(){
+  const sec=document.getElementById('alcoves'), world=document.getElementById('alcWorld'); if(!sec) return;
+  const items=[...world.children], nav=[...document.querySelectorAll('#alcNav li')], bar=document.getElementById('alcBar');
+  let D=1500, cur=0, tgt=0;
+  function measure(){D=innerWidth<760?1100:1500}
+  function read(){const r=sec.getBoundingClientRect();const span=r.height-innerHeight;tgt=span>0?Math.min(1,Math.max(0,-r.top/span)):0}
+  function frame(){
+    requestAnimationFrame(frame);
+    if(current!=='pladur') return;
+    cur+=(tgt-cur)*.12;
+    const T=cur*(items.length-1), ii=Math.min(items.length-2,Math.floor(T)), ff=T-ii;
+    const hf=Math.min(1,Math.max(0,(ff-.28)/.44)), sm=hf*hf*(3-2*hf);   // pausa en cada pieza
+    const z=(ii+sm)*D, mob=innerWidth<760;
+    let near=0,best=1e9;
+    items.forEach((el,i)=>{
+      const d=i*D-z;                 // distancia a la cámara
+      const side=(i%2?1:-1)*(mob?0:Math.min(1,Math.max(0,d/D))*90);
+      el.style.transform=`translate(-50%,-50%) translate3d(${side}px,0,${-d}px) rotateY(${(mob?0:Math.max(-1,Math.min(1,d/D))*(i%2?-6:6))}deg)`;
+      const op=d<0?Math.max(0,1+d/(D*.3)):Math.max(0,1-d/(D*1.15));
+      el.querySelector('.alc-copy').style.opacity=Math.max(0,1-Math.abs(d)/(D*.32)).toFixed(3);
+      el.style.opacity=op.toFixed(3);
+      el.style.pointerEvents=Math.abs(d)<D*.4?'auto':'none';
+      el.style.visibility=op<.01?'hidden':'visible';
+      if(Math.abs(d)<best){best=Math.abs(d);near=i}
+    });
+    items.forEach((el,i)=>el.classList.toggle('here',i===near));
+    nav.forEach((li,i)=>li.classList.toggle('on',i===near));
+    bar.style.transform=`scaleX(${cur})`;
+  }
+  addEventListener('scroll',read,{passive:true});addEventListener('resize',measure);
+  addEventListener('route',e=>{if(e.detail==='pladur'){measure();read();cur=tgt}});
+  measure();read();frame();
+})();
+
+/* ---------- trabajos: recorrido horizontal ---------- */
+(function(){
+  const sec=document.getElementById('hscroll'), track=document.getElementById('hTrack'); if(!sec) return;
+  const bar=document.getElementById('hBar'), count=document.getElementById('hCount');
+  const imgs=[...track.querySelectorAll('.h-card img')];
+  let dist=0,cur=0,tgt=0;
+  function measure(){dist=Math.max(0,track.scrollWidth-innerWidth);sec.style.height=(dist+innerHeight*1.15)+'px'}
+  function read(){const r=sec.getBoundingClientRect();const span=r.height-innerHeight;tgt=span>0?Math.min(1,Math.max(0,-r.top/span)):0}
+  function frame(){
+    requestAnimationFrame(frame);
+    if(current!=='trabajos') return;
+    cur+=(tgt-cur)*.12;
+    track.style.transform=`translate3d(${-cur*dist}px,0,0)`;
+    imgs.forEach(img=>{const r=img.parentElement.getBoundingClientRect();const c=(r.left+r.width/2-innerWidth/2)/innerWidth;img.style.transform=`translateX(${(-6.5-c*6).toFixed(2)}%)`});
+    bar.style.transform=`scaleX(${cur})`;
+    const n=track.children.length;count.textContent=String(1+Math.round(cur*(n-1))).padStart(2,'0')+' / '+String(n).padStart(2,'0');
+  }
+  addEventListener('scroll',read,{passive:true});addEventListener('resize',()=>{measure();read()});
+  addEventListener('route',e=>{if(e.detail==='trabajos'){measure();read();cur=tgt}});
+  frame();
+})();
+
+
+/* ---------- preguntas rápidas ---------- */
+(function(){
+  const QA=[
+    ['¿El presupuesto es gratis?','Sí. El presupuesto es sin compromiso: vemos la vivienda o el local y te lo pasamos con cada partida explicada.'],
+    ['¿En qué zona trabajáis?','En Logroño y La Rioja. Por ejemplo, también hemos hecho obras en Alfaro.'],
+    ['¿Me ayudáis con la subvención?','Sí. Hacemos el estudio, el presupuesto y la gestión de la subvención. Puede cubrir hasta un 40 % del coste, según el programa, la comunidad autónoma y la vivienda.'],
+    ['¿Cuánto se ahorra aislando?','Como estimación, hasta un 30 % aislando fachadas, un 25 % en cubiertas y buhardillas y un 20 % con insuflado en cámaras de aire.'],
+    ['¿Hacéis muebles de pladur?','Sí, a medida: muebles de salón, bibliotecas, cortineros, chimeneas, fosas de luz LED, estanterías y huecos para la tele.'],
+    ['¿Podéis insonorizar un techo?','Sí. Montamos techos insonorizados con sistema Silentblock: doble placa de yeso laminado, varillas antivibración y lana mineral.'],
+    ['¿Trabajáis en locales?','Sí: renovación de escaparates, humedades, techos acústicos y reformas de locales comerciales.'],
+    ['¿Cómo os contacto?','Llámanos al 614 184 114 o al 642 407 195, o escríbenos por <a href="https://wa.me/34614184114?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20me%20gustar%C3%ADa%20pedir%20presupuesto." target="_blank" rel="noopener">WhatsApp</a>.']
+  ];
+  const btn=document.getElementById('faqBtn'),box=document.getElementById('faq'),log=document.getElementById('faqLog'),qs=document.getElementById('faqQs');
+  QA.forEach(([q,a],i)=>{const b=document.createElement('button');b.type='button';b.textContent=q;b.onclick=()=>ask(i);qs.appendChild(b)});
+  function add(cls,html){const d=document.createElement('div');d.className='msg '+cls;d.innerHTML=html;log.appendChild(d);log.scrollTop=log.scrollHeight;return d}
+  function ask(i){
+    add('me',QA[i][0]);
+    const t=add('them','<span aria-label="escribiendo">···</span>');
+    setTimeout(()=>{t.innerHTML=QA[i][1];log.scrollTop=log.scrollHeight;
+      if(!log.querySelector('.wa-tip')){setTimeout(()=>{const x=add('them wa-tip','¿Te queda alguna duda? <a href="https://wa.me/34614184114?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20me%20gustar%C3%ADa%20pedir%20presupuesto." target="_blank" rel="noopener">Escríbenos por WhatsApp</a> y te respondemos.');},700)}
+    },550);
+  }
+  function toggle(open){box.hidden=!open;btn.setAttribute('aria-expanded',open)}
+  btn.onclick=()=>toggle(box.hidden);
+  document.getElementById('faqClose').onclick=()=>{toggle(false);btn.focus()};
+  addEventListener('keydown',e=>{if(e.key==='Escape'&&!box.hidden){toggle(false);btn.focus()}});
+})();
+
+/* ---------- animación de aire (servicios) ---------- */
+(function(){
+  const cv=document.getElementById('airflow'); if(!cv) return;
+  const ctx=cv.getContext('2d'); let W,H,parts=[],t=0;
+  function size(){const r=cv.getBoundingClientRect();if(!r.width)return;const d=Math.min(devicePixelRatio,2);W=cv.width=r.width*d;H=cv.height=r.height*d;}
+  for(let i=0;i<70;i++)parts.push({p:Math.random(),lane:Math.random()<.5?0:1,o:Math.random()*2-1,s:.0025+Math.random()*.002});
+  function draw(){
+    requestAnimationFrame(draw);
+    if(current!=='servicios'||!W){size();return}
+    t++;ctx.clearRect(0,0,W,H);
+    const cx=W/2,cy=H/2,u=Math.min(W,H)/10;
+    // casa
+    ctx.strokeStyle='#1d3a70';ctx.lineWidth=u*.12;ctx.lineJoin='miter';
+    ctx.beginPath();ctx.moveTo(cx-u*3.6,cy+u*3);ctx.lineTo(cx-u*3.6,cy-u*.6);ctx.lineTo(cx,cy-u*3.4);ctx.lineTo(cx+u*3.6,cy-u*.6);ctx.lineTo(cx+u*3.6,cy+u*3);ctx.closePath();ctx.stroke();
+    // recuperador
+    ctx.fillStyle='#101b30';ctx.fillRect(cx-u*.8,cy-u*.45,u*1.6,u*.9);
+    ctx.strokeStyle='#fff';ctx.lineWidth=u*.05;ctx.beginPath();ctx.moveTo(cx-u*.35,cy);ctx.lineTo(cx,cy-u*.3);ctx.lineTo(cx+u*.35,cy);ctx.lineTo(cx,cy+u*.3);ctx.closePath();ctx.stroke();
+    // flujos
+    parts.forEach(q=>{
+      q.p+=q.s;if(q.p>1)q.p-=1;
+      const k=q.p; let x,y,col;
+      if(q.lane===0){ // aire limpio: entra por la izquierda, sale a habitaciones
+        x=cx-u*5+k*u*5; y=cy+q.o*u*.25 - Math.sin(k*Math.PI)*u*.4; col=`rgba(29,58,112,${.25+.6*Math.sin(k*Math.PI)})`;
+      }else{ // aire viciado: del interior hacia fuera por la derecha
+        x=cx+k*u*5; y=cy+q.o*u*.25 + Math.sin(k*Math.PI)*u*.4; col=`rgba(200,37,47,${.25+.6*Math.sin(k*Math.PI)})`;
+      }
+      ctx.fillStyle=col;ctx.beginPath();ctx.arc(x,y,u*.07,0,7);ctx.fill();
+    });
+    ctx.font=`500 ${u*.32}px Figtree, sans-serif`;ctx.fillStyle='#1d3a70';ctx.textAlign='left';ctx.fillText('aire exterior filtrado',cx-u*4.8,cy+u*1.25);
+    ctx.fillStyle='#c8252f';ctx.textAlign='right';ctx.fillText('aire viciado',cx+u*4.8,cy-u*1.05);
+  }
+  addEventListener('resize',size);draw();
+})();
+
+/* ---------- textura de humedad que se seca (trabajos) ---------- */
+(function(){
+  const cv=document.getElementById('humid'); if(!cv) return; const ctx=cv.getContext('2d');let W,H,blobs=[];
+  function size(){const r=cv.getBoundingClientRect();if(!r.width)return false;const d=Math.min(devicePixelRatio,2);W=cv.width=r.width*d;H=cv.height=r.height*d;blobs=[];for(let i=0;i<14;i++)blobs.push({x:Math.random()*W,y:H*(.55+Math.random()*.5),r:(.08+Math.random()*.18)*W,ph:Math.random()*6});return true}
+  let t=0;function draw(){requestAnimationFrame(draw);if(current!=='trabajos')return;if(!W&&!size())return;t+=.008;ctx.clearRect(0,0,W,H);
+    const dry=(Math.sin(t)+1)/2;
+    blobs.forEach(b=>{const g=ctx.createRadialGradient(b.x,b.y,0,b.x,b.y,b.r*(0.6+0.4*(1-dry)));g.addColorStop(0,`rgba(90,110,140,${.16*(1-dry)+.03})`);g.addColorStop(1,'rgba(90,110,140,0)');ctx.fillStyle=g;ctx.fillRect(0,0,W,H)});
+    ctx.strokeStyle='rgba(29,58,112,.08)';ctx.lineWidth=1;for(let y=0;y<H;y+=H/9){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke()}
+  }
+  addEventListener('resize',size);draw();
+})();
+</script>
+
+<script>
+/* ---------- salón: secuencia de imágenes que se pasa con el scroll ---------- */
+(function(){
+  const canvas=document.getElementById('wall'), box=document.getElementById('canvasBox'), story=document.getElementById('story');
+  const ctx=canvas.getContext('2d',{alpha:true});
+  // 359 imágenes: en móvil sueltas y pequeñas; en ordenador agrupadas en láminas de 4 (2 x 2)
+  const N=359, MOB=matchMedia('(max-width:900px)').matches;
+  const PER=MOB?1:4, COLS=MOB?1:2, DIR=MOB?'img/salon/m/':'img/salon2/d/', PADN=MOB?3:2;
+  const KEEP=Math.ceil(14/PER), DROP=Math.ceil(30/PER);
+  const NA=Math.ceil(N/PER);
+  // zona ocupada por la maqueta en cada imagen (0-1), para ampliarla sin dejar blanco alrededor
+  const BB=[[0.0374,0.2364,0.9156,0.8122],[0.0372,0.2364,0.9156,0.8126],[0.0369,0.2364,0.9157,0.813],[0.0366,0.2364,0.9158,0.8135],[0.0363,0.2364,0.9158,0.8141],[0.0359,0.2364,0.9159,0.8148],[0.0354,0.2364,0.916,0.8155],[0.0349,0.2371,0.9161,0.8163],[0.0343,0.2372,0.9164,0.8172],[0.0337,0.2373,0.9164,0.8183],[0.033,0.2373,0.9165,0.8194],[0.0323,0.2373,0.9167,0.8206],[0.0314,0.2373,0.9169,0.822],[0.0305,0.2381,0.9173,0.8234],[0.0296,0.2382,0.9173,0.8249],[0.0286,0.2382,0.9175,0.8266],[0.0275,0.2382,0.9177,0.8283],[0.0264,0.239,0.9182,0.8301],[0.0252,0.2391,0.9182,0.832],[0.024,0.2391,0.9184,0.834],[0.0228,0.2399,0.9187,0.8361],[0.0214,0.24,0.9191,0.8383],[0.02,0.24,0.9192,0.8405],[0.0186,0.2409,0.9195,0.8429],[0.0171,0.2409,0.92,0.8452],[0.0156,0.2409,0.9202,0.8477],[0.0142,0.2418,0.9206,0.8503],[0.0127,0.2418,0.921,0.8529],[0.0116,0.2427,0.9214,0.8556],[0.01,0.2427,0.9219,0.8584],[0.0082,0.2435,0.9224,0.8612],[0.0064,0.2436,0.9229,0.864],[0.0045,0.2444,0.9235,0.8669],[0.0027,0.2445,0.9241,0.8699],[0.0,0.2453,0.9247,0.8729],[0.0,0.2455,0.9253,0.8759],[0.0,0.2462,0.926,0.879],[0.0,0.2464,0.9267,0.8821],[0.0,0.2472,0.9274,0.8853],[0.0,0.2473,0.9282,0.8884],[0.0,0.2482,0.9289,0.8916],[0.0,0.2482,0.93,0.8948],[0.0,0.2491,0.9309,0.8982],[0.0,0.2497,0.9313,0.9013],[0.0,0.25,0.9322,0.9045],[0.0,0.2507,0.9336,0.9082],[0.0,0.2509,0.9339,0.911],[0.0,0.2517,0.9348,0.9145],[0.0,0.2522,0.9356,0.9182],[0.0,0.2527,0.9365,0.9209],[0.0,0.2532,0.9373,0.9245],[0.0,0.2536,0.9382,0.9273],[0.0,0.2542,0.9391,0.9309],[0.0,0.2545,0.94,0.9336],[0.0,0.2552,0.9409,0.9373],[0.0,0.2555,0.9418,0.94],[0.0,0.2561,0.9427,0.9436],[0.0,0.2564,0.9436,0.9464],[0.0,0.2571,0.9436,0.9491],[0.0,0.2575,0.9445,0.9518],[0.0,0.2579,0.9455,0.9545],[0.0,0.2582,0.9464,0.9573],[0.0,0.2587,0.9473,0.96],[0.0,0.2591,0.9473,0.9627],[0.0,0.2595,0.9482,0.9645],[0.0,0.2599,0.9491,0.9673],[0.0,0.2602,0.9491,0.9691],[0.0,0.2605,0.95,0.9709],[0.0,0.2608,0.95,0.9727],[0.0,0.2611,0.9509,0.9745],[0.0,0.2613,0.9509,0.9764],[0.0,0.2615,0.9518,0.9782],[0.0,0.2617,0.9518,0.9791],[0.0,0.2618,0.9518,0.98],[0.0,0.2619,0.9527,0.9818],[0.0,0.2619,0.9527,0.9818],[0.0,0.2619,0.9532,0.9827],[0.0,0.2617,0.9539,0.9836],[0.0,0.2615,0.9547,0.9836],[0.0,0.2612,0.9557,0.9836],[0.0,0.2607,0.9567,0.9836],[0.0,0.2602,0.9579,0.9836],[0.0,0.2596,0.9593,0.9837],[0.0,0.2589,0.9608,0.9841],[0.0,0.258,0.9626,0.9845],[0.0,0.2571,0.9645,0.9848],[0.0,0.256,0.9666,0.9852],[0.0,0.2548,0.9689,0.9855],[0.0,0.2534,0.9711,0.9857],[0.0,0.2519,0.9734,0.986],[0.0,0.2503,0.9756,0.9862],[0.0,0.2486,0.9778,0.9865],[0.0,0.2467,0.98,0.9873],[0.0,0.2447,0.9845,0.9873],[0.0,0.2426,0.9882,0.9882],[0.0,0.2404,0.9927,0.9882],[0.0,0.2382,0.9982,0.9891],[0.0,0.2359,1.0,0.9891],[0.0,0.2336,1.0,0.9891],[0.0,0.2312,1.0,0.9891],[0.0,0.2288,1.0,0.9891],[0.0,0.2255,1.0,0.9891],[0.0,0.2227,1.0,0.9891],[0.0,0.22,1.0,0.9891],[0.0,0.2182,1.0,0.9883],[0.0,0.2155,1.0,0.9882],[0.0,0.2134,1.0,0.9882],[0.0,0.2108,1.0,0.9882],[0.0,0.2081,1.0,0.9882],[0.0,0.2055,1.0,0.9877],[0.0,0.2029,1.0,0.9876],[0.0,0.2002,1.0,0.9874],[0.0045,0.1976,1.0,0.9873],[0.01,0.1949,1.0,0.9873],[0.0145,0.1923,1.0,0.9873],[0.02,0.1896,1.0,0.9868],[0.0245,0.1869,1.0,0.9866],[0.03,0.1842,1.0,0.9865],[0.0355,0.1815,1.0,0.9864],[0.04,0.1787,1.0,0.9864],[0.0455,0.176,1.0,0.9864],[0.0505,0.1727,1.0,0.986],[0.0555,0.1704,1.0,0.9858],[0.0605,0.1673,1.0,0.9857],[0.0655,0.1645,1.0,0.9856],[0.0705,0.1618,1.0,0.9855],[0.0754,0.1591,1.0,0.9855],[0.0803,0.1564,1.0,0.9855],[0.0852,0.1536,1.0,0.9855],[0.09,0.1509,1.0,0.9855],[0.0948,0.1482,1.0,0.985],[0.0995,0.1455,1.0,0.9849],[0.1041,0.1427,1.0,0.9849],[0.1087,0.14,1.0,0.9848],[0.1132,0.1373,1.0,0.9848],[0.1176,0.1345,1.0,0.9848],[0.1219,0.1318,1.0,0.9847],[0.1262,0.1291,1.0,0.9847],[0.1303,0.1264,1.0,0.9846],[0.1344,0.1245,1.0,0.9846],[0.1384,0.1218,1.0,0.9846],[0.1423,0.12,1.0,0.9847],[0.146,0.1173,1.0,0.9847],[0.1497,0.1155,1.0,0.9848],[0.1532,0.1127,1.0,0.9848],[0.1565,0.1109,1.0,0.9848],[0.1598,0.1091,1.0,0.9849],[0.1629,0.1073,1.0,0.9849],[0.1658,0.1045,1.0,0.985],[0.1687,0.1036,1.0,0.9855],[0.1713,0.1018,1.0,0.9855],[0.1739,0.1,1.0,0.9855],[0.1762,0.0982,1.0,0.9855],[0.1784,0.0973,1.0,0.9855],[0.1804,0.0955,1.0,0.9855],[0.1823,0.0945,1.0,0.9855],[0.1839,0.0936,1.0,0.9855],[0.1854,0.0927,1.0,0.9855],[0.1866,0.0918,1.0,0.9855],[0.1877,0.0909,1.0,0.9856],[0.1884,0.09,1.0,0.9857],[0.189,0.09,1.0,0.9858],[0.1892,0.0891,1.0,0.986],[0.1892,0.0891,1.0,0.9862],[0.189,0.0891,1.0,0.9865],[0.1884,0.0889,1.0,0.9868],[0.1875,0.0882,1.0,0.9872],[0.1864,0.0877,1.0,0.9877],[0.1848,0.0872,1.0,0.9883],[0.183,0.0866,1.0,0.9889],[0.1809,0.086,1.0,0.9896],[0.1784,0.0854,1.0,0.9903],[0.1756,0.0847,1.0,0.991],[0.1724,0.084,1.0,0.9916],[0.1688,0.0832,1.0,0.9923],[0.1648,0.0824,1.0,0.993],[0.1605,0.0815,1.0,0.9937],[0.1558,0.0806,1.0,0.9955],[0.1508,0.0795,1.0,0.9973],[0.1454,0.0784,1.0,0.9982],[0.1396,0.0773,1.0,1.0],[0.1334,0.0761,1.0,1.0],[0.1269,0.0748,1.0,1.0],[0.1201,0.0735,1.0,1.0],[0.1129,0.0721,1.0,1.0],[0.1054,0.0706,1.0,1.0],[0.0975,0.0692,1.0,1.0],[0.0895,0.0677,1.0,1.0],[0.0818,0.0662,1.0,1.0],[0.0743,0.0646,1.0,1.0],[0.0671,0.063,1.0,1.0],[0.0591,0.0614,1.0,1.0],[0.0491,0.0598,1.0,1.0],[0.0391,0.0581,1.0,1.0],[0.0282,0.0564,1.0,1.0],[0.0182,0.0545,1.0,1.0],[0.0064,0.0527,1.0,1.0],[0.0,0.0514,1.0,1.0],[0.0,0.0497,1.0,1.0],[0.0,0.048,1.0,1.0],[0.0,0.0463,1.0,1.0],[0.0,0.0445,1.0,1.0],[0.0,0.0427,1.0,1.0],[0.0,0.0409,1.0,1.0],[0.0,0.0391,1.0,1.0],[0.0,0.0373,1.0,1.0],[0.0,0.0364,1.0,1.0],[0.0,0.0345,1.0,1.0],[0.0,0.0327,1.0,1.0],[0.0,0.0309,1.0,1.0],[0.0,0.03,1.0,1.0],[0.0,0.0282,1.0,1.0],[0.0,0.0264,1.0,1.0],[0.0,0.0255,1.0,1.0],[0.0,0.0245,1.0,1.0],[0.0,0.0227,1.0,1.0],[0.0,0.0218,1.0,1.0],[0.0,0.0209,1.0,1.0],[0.0,0.0191,1.0,1.0],[0.0,0.0182,1.0,1.0],[0.0,0.0173,1.0,1.0],[0.0,0.0164,1.0,1.0],[0.0,0.0155,1.0,1.0],[0.0,0.0145,1.0,1.0],[0.0,0.0136,1.0,1.0],[0.0,0.0127,1.0,1.0],[0.0,0.0118,1.0,1.0],[0.0,0.0109,1.0,1.0],[0.0,0.0109,1.0,1.0],[0.0,0.01,1.0,1.0],[0.0,0.0091,1.0,1.0],[0.0,0.0091,1.0,1.0],[0.0,0.0082,1.0,1.0],[0.0,0.0082,1.0,1.0],[0.0,0.0073,1.0,1.0],[0.0,0.0073,1.0,1.0],[0.0,0.0073,1.0,1.0],[0.0,0.0064,1.0,1.0],[0.0,0.0064,1.0,1.0],[0.0,0.0064,1.0,1.0],[0.0,0.0064,1.0,1.0],[0.0,0.0055,1.0,1.0],[0.0,0.0055,1.0,1.0],[0.0,0.0055,1.0,1.0],[0.0,0.0055,1.0,1.0],[0.0,0.0055,1.0,1.0],[0.0,0.0055,1.0,1.0],[0.0,0.0055,1.0,1.0],[0.0,0.0055,1.0,1.0],[0.0,0.0045,1.0,1.0],[0.0,0.0045,1.0,1.0],[0.0,0.0045,1.0,1.0],[0.0,0.0055,1.0,1.0],[0.0,0.0055,1.0,1.0],[0.0,0.0055,1.0,1.0],[0.0,0.0064,1.0,1.0],[0.0,0.0073,1.0,1.0],[0.0,0.0082,1.0,1.0],[0.0,0.0091,1.0,1.0],[0.0,0.01,1.0,1.0],[0.0,0.0109,1.0,1.0],[0.0,0.0127,1.0,1.0],[0.0,0.0136,1.0,1.0],[0.0,0.0155,1.0,1.0],[0.0,0.0173,1.0,1.0],[0.0,0.0191,1.0,1.0],[0.0,0.0209,1.0,1.0],[0.0,0.0227,1.0,1.0],[0.0,0.0245,1.0,1.0],[0.0,0.0273,1.0,1.0],[0.0,0.0291,1.0,1.0],[0.0,0.0309,1.0,1.0],[0.0,0.0336,1.0,1.0],[0.0,0.0364,1.0,1.0],[0.0,0.0382,1.0,1.0],[0.0,0.0409,1.0,1.0],[0.0,0.0436,1.0,1.0],[0.0,0.0464,1.0,1.0],[0.0,0.0482,1.0,1.0],[0.0,0.0509,1.0,1.0],[0.0,0.0536,1.0,1.0],[0.0,0.0564,1.0,1.0],[0.0,0.0599,1.0,1.0],[0.0,0.0618,1.0,1.0],[0.0,0.0652,1.0,1.0],[0.0,0.068,1.0,1.0],[0.0,0.0708,1.0,1.0],[0.0,0.0735,1.0,1.0],[0.0,0.0763,1.0,1.0],[0.0,0.0791,1.0,1.0],[0.0,0.0818,1.0,1.0],[0.0,0.0845,1.0,1.0],[0.0,0.0873,1.0,1.0],[0.0,0.09,1.0,1.0],[0.0,0.0927,1.0,0.9982],[0.0,0.0959,1.0,0.9936],[0.0,0.0987,1.0,0.9891],[0.0,0.1016,1.0,0.9855],[0.0,0.1044,1.0,0.9809],[0.0,0.1072,1.0,0.9764],[0.0,0.11,1.0,0.9718],[0.0,0.1127,1.0,0.9673],[0.0,0.1155,1.0,0.9618],[0.0,0.1182,0.9964,0.9573],[0.0,0.1209,0.9909,0.9526],[0.0,0.1236,0.9855,0.9481],[0.0,0.1268,0.98,0.9437],[0.0,0.1296,0.9745,0.9393],[0.0,0.1323,0.9691,0.9348],[0.0,0.135,0.9647,0.9305],[0.0,0.1377,0.9609,0.9261],[0.0,0.1404,0.9571,0.9219],[0.0,0.143,0.9532,0.9177],[0.0,0.1457,0.9494,0.9135],[0.0,0.1483,0.9456,0.9095],[0.0,0.1508,0.9422,0.9055],[0.0,0.1534,0.939,0.9017],[0.0,0.1558,0.936,0.8979],[0.0,0.1583,0.9332,0.8942],[0.0,0.1606,0.9308,0.8906],[0.0,0.163,0.9285,0.8871],[0.0,0.1653,0.9264,0.8837],[0.0,0.1675,0.9246,0.8804],[0.0,0.1697,0.923,0.8772],[0.0,0.1718,0.9216,0.8741],[0.0,0.1739,0.9203,0.871],[0.0,0.1759,0.9193,0.8681],[0.0,0.1778,0.9185,0.8652],[0.0,0.1797,0.9178,0.8624],[0.0,0.1816,0.9173,0.8597],[0.0,0.1834,0.9169,0.8571],[0.0,0.1851,0.9167,0.8546],[0.0,0.1868,0.9164,0.8523],[0.0,0.1884,0.9164,0.8499],[0.0,0.19,0.9159,0.8477],[0.0,0.1915,0.9157,0.8456],[0.0,0.193,0.9155,0.8435],[0.0,0.1944,0.9155,0.8416],[0.0,0.1957,0.9151,0.8397],[0.0,0.1969,0.9149,0.838],[0.0,0.1981,0.9148,0.8363],[0.0,0.1993,0.9146,0.8347],[0.0,0.2003,0.9145,0.8332],[0.0,0.2013,0.9145,0.8318],[0.0,0.2023,0.9141,0.8304],[0.0,0.2032,0.914,0.8292],[0.0,0.2041,0.9139,0.8281],[0.0,0.2048,0.9137,0.827],[0.0,0.2055,0.9136,0.8261],[0.0,0.2062,0.9136,0.8252],[0.0,0.2068,0.9136,0.8244],[0.0,0.2073,0.9136,0.8237],[0.0,0.2077,0.9132,0.8231],[0.0,0.2081,0.9132,0.8226],[0.0,0.2085,0.9131,0.8221],[0.0,0.2088,0.913,0.8216],[0.0,0.209,0.913,0.8213],[0.0,0.2093,0.9129,0.821],[0.0,0.2094,0.9129,0.8207]];
+  const layers=[...document.querySelectorAll('#layers li')], bar=document.getElementById('prog');
+  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches, touch=matchMedia('(pointer: coarse)').matches;
+  const sheets=new Array(NA);
+  let target=0, prog=0, W=0, H=0, running=false, active=true, lastKey='', lastA=-9;
+
+  function load(a){
+    if(sheets[a]) return;
+    const im=new Image(); im.decoding='async'; sheets[a]=im;
+    im.onload=()=>{im.ok=true; im.bmp=im; lastA=-9; warm(); draw(true)};
+    im.src=DIR+String(a).padStart(PADN,'0')+'.webp';
+  }
+  // primero la lámina inicial y la final, luego el resto en orden
+  const order=[]; (MOB?[60,20,10,4,2,1]:[1]).forEach(st=>{for(let i=0;i<NA;i+=st) if(!order.includes(i)) order.push(i)}); if(order[1]!==NA-1){order.splice(order.indexOf(NA-1),1);order.splice(1,0,NA-1)}
+  let qi=0; (function pump(){let n=0; while(qi<order.length&&n<(MOB?8:3)){load(order[qi++]);n++} if(qi<order.length) setTimeout(pump,MOB?40:60)})();
+
+  // solo se mantienen descomprimidas las láminas cercanas a la posición actual
+  function warm(){
+    const ca=Math.floor(Math.round(prog*(N-1))/PER); if(ca===lastA) return; lastA=ca;
+    sheets.forEach((s,k)=>{ if(!s||!s.ok) return; const d=Math.abs(k-ca);
+      if(d<=KEEP&&s.bmp===s&&!s.pending&&window.createImageBitmap){s.pending=true;createImageBitmap(s).then(b=>{s.pending=false;if(Math.abs(k-lastA)<=DROP){s.bmp=b;draw(true)}else b.close()},()=>{s.pending=false})}
+      else if(d>DROP&&s.bmp!==s){try{s.bmp.close()}catch(_){} s.bmp=s}});
+  }
+  const CIB=!!window.createImageBitmap;
+  function frameOk(i){const s=sheets[Math.floor(i/PER)];return s&&s.ok&&(!CIB||s.bmp!==s)}
+  function nearest(j){for(let o=0;o<N;o++){for(const k of [j-o,j+o]){if(k>=0&&k<N&&frameOk(k))return k}}return -1}
+
+  function resize(){const r=box.getBoundingClientRect(); if(!r.width) return; const d=Math.min(devicePixelRatio||1,2);
+    W=canvas.width=Math.round(r.width*d); H=canvas.height=Math.round(r.height*d); draw(true)}
+  function draw(force){
+    if(!W) return;
+    const idx=Math.round(prog*(N-1)), f=frameOk(idx)?idx:nearest(idx); if(f<0) return;
+    const key=f+'|'+W+'x'+H; if(key===lastKey&&!force) return; lastKey=key;
+    const s=sheets[Math.floor(f/PER)], src=s.bmp, c=f%PER, fw=(s.naturalWidth||src.width)/COLS;
+    const b=BB[f], sc=W/((b[2]-b[0])*fw)*(MOB?1.06:1.03), w=fw*sc;
+    const x0=W/2-(b[0]+b[2])/2*fw*sc, y0=H/2-(b[1]+b[3])/2*fw*sc;
+    ctx.clearRect(0,0,W,H);
+    ctx.drawImage(src,(c%COLS)*fw,Math.floor(c/COLS)*fw,fw,fw,x0,y0,w,w);
+  }
+  function ui(p){
+    const k=p<.06?0:p<.30?1:p<.54?2:p<.78?3:4;
+    layers.forEach((li,i)=>{li.classList.toggle('on',i<=k);li.classList.toggle('now',i===k)});
+    bar.style.transform=`scaleX(${p})`;
+  }
+  function read(){const r=story.getBoundingClientRect(), span=r.height-innerHeight; target=span>0?Math.min(1,Math.max(0,-r.top/span)):0; kick()}
+  function kick(){ if(!running&&active){running=true;requestAnimationFrame(loop)} }
+  function loop(){
+    prog+=(target-prog)*(reduced?1:touch?.5:.35);
+    const moving=Math.abs(target-prog)>.0003; if(!moving) prog=target;
+    warm(); draw(false); ui(prog);
+    if(moving&&active) requestAnimationFrame(loop); else running=false;
+  }
+  addEventListener('scroll',read,{passive:true});
+  new ResizeObserver(resize).observe(box);
+  addEventListener('route',e=>{active=e.detail==='inicio'; if(active){resize();read()}});
+  resize(); read(); ui(0);
+})();
+</script>
+
+</body>
+</html>
